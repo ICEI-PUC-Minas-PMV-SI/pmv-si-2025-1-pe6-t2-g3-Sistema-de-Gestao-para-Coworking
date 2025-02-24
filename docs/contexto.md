@@ -17,13 +17,13 @@ Desenvolver um sistema de agendamento de salas presenciais para reuniões, garan
 
 Objetivos Específicos
 
--Implementar um sistema seguro de autenticação e controle de acesso
- *Desenvolver um mecanismo de login para os usuários.
- *Avaliar e aplicar práticas de segurança, como armazenamento seguro de senhas e proteção contra acessos indevidos.
+Implementar um sistema seguro de autenticação e controle de acesso:
+- **Desenvolver um mecanismo de login para os usuários.
+- **Avaliar e aplicar práticas de segurança, como armazenamento seguro de senhas e proteção contra acessos indevidos.
 
--Criar uma interface intuitiva para gerenciamento de reservas
- *Desenvolver um design responsivo e acessível para facilitar a experiência do usuário.
- *Implementar funcionalidades que permitam visualizar, cadastrar e cancelar reservas de forma eficiente.
+Criar uma interface intuitiva para gerenciamento de reservas:
+- **Desenvolver um design responsivo e acessível para facilitar a experiência do usuário.
+- **Implementar funcionalidades que permitam visualizar, cadastrar e cancelar reservas de forma eficiente.
 
 ## Justificativa
 
