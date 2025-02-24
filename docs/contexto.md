@@ -106,10 +106,7 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 
 # Arquitetura da Solução
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![arq](docs/img/software-architect.png)
-
+![arq](img/software-architect.png)
 
 ## Tecnologias Utilizadas
 
