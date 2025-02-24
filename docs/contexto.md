@@ -1,6 +1,8 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Este projeto tem como objetivo o desenvolvimento de um sistema distribuído para a gestão e aluguel de espaços de coworking em Belo Horizonte. A aplicação será composta por três camadas principais: um backend responsável pela lógica de negócio e serviços de API, um frontend para acesso via aplicação web e um aplicativo mobile, garantindo acessibilidade e usabilidade multiplataforma.
+
+O sistema permitirá que usuários realizem agendamentos de salas, gerenciem suas reservas e acessem informações sobre os espaços disponíveis. Para isso, será adotada uma arquitetura distribuída, visando escalabilidade, confiabilidade e eficiência na comunicação entre os componentes. O backend será implementado utilizando serviços de API, conforme as necessidades da aplicação. O frontend e o aplicativo mobile consumirão essas APIs para oferecer uma experiência intuitiva e responsiva aos usuários.
 
 ## Problema
 
