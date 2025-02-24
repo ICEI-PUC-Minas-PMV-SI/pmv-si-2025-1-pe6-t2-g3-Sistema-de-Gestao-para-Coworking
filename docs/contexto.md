@@ -3,6 +3,7 @@
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
+
 O problema da marcação de salas em um ambiente de coworking é um dos principais desafios enfrentados por gestores e usuários desses espaços. Em um contexto onde startups e profissionais autônomos buscam flexibilidade e praticidade, a gestão eficiente das reservas de salas é crucial para garantir uma experiência positiva e evitar conflitos que possam prejudicar a produtividade e a satisfação dos usuários.
 
 Um dos principais problemas é a sobreposição de reservas. Em um espaço de coworking, onde várias pessoas ou equipes compartilham os mesmos recursos, é comum que ocorram conflitos de agendamento, especialmente se o processo de reserva não for centralizado ou automatizado. Isso pode levar a situações em que duas ou mais pessoas tentam usar a mesma sala no mesmo horário, causando frustração e perda de tempo. A complexidade no processo de reserva também é um ponto crítico. Se o sistema for complicado ou exigir muitas etapas para realizar uma reserva, os usuários podem desistir de usar o espaço ou buscar alternativas mais simples. Isso é particularmente relevante para profissionais autônomos e startups, que muitas vezes precisam de agilidade e praticidade para focar em suas atividades principais.
@@ -18,10 +19,12 @@ Desenvolver um sistema de agendamento de salas presenciais para reuniões, garan
 Objetivos Específicos
 
 Implementar um sistema seguro de autenticação e controle de acesso:
+
 - Desenvolver um mecanismo de login para os usuários.
 - Avaliar e aplicar práticas de segurança, como armazenamento seguro de senhas e proteção contra acessos indevidos.
 
 Criar uma interface intuitiva para gerenciamento de reservas:
+
 - Desenvolver um design responsivo e acessível para facilitar a experiência do usuário.
 - Implementar funcionalidades que permitam visualizar, cadastrar e cancelar reservas de forma eficiente.
 
@@ -32,6 +35,7 @@ Descreva a importância ou a motivação para trabalhar com esta aplicação que
 O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
 
 > **Links Úteis**:
+>
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
@@ -47,6 +51,7 @@ Este Sistema de Gestão para Coworking é voltado para a gestão de agendamentos
 - **Consultores e Profissionais Autônomos:** Homens e mulheres, de 25 a 45 anos, com formação em Administração, TI, Marketing ou Design, solteiros(as) ou casados(as) com horários flexíveis, que utilizam coworking para reuniões com clientes em centros empresariais de Belo Horizonte.
 
 - **Freelancers e Profissionais Remotos:** Homens e mulheres, de 22 a 40 anos, com formação em TI, Design, Marketing ou Jornalismo, solteiros(as) ou casados(as) com horários flexíveis, que buscam ambientes produtivos e inspiradores em bairros com boa infraestrutura em Belo Horizonte.
+
 # Especificações do Projeto
 
 ## Requisitos
@@ -55,34 +60,42 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+| ID     | Descrição do Requisito                                                        | Prioridade |
+| ------ | ----------------------------------------------------------------------------- | ---------- |
+| RF-001 | Permitir que o usuário se registre e faça login no site                       | ALTA       |
+| RF-002 | Permitir que o usuário consiga realizar reservas de salas no site             | ALTA       |
+| RF-003 | Permitir que o usuário possa visualizar as suas reservas de salas             | ALTA       |
+| RF-004 | Permitir que o usuário cancelar as suas reservas de salas                     | ALTA       |
+| RF-005 | Permitir que o usuário receba notificações sobre suas reservas (email e push) | MÉDIA      |
+| RF-006 | Permitir que o usuário edite suas reservas antes do horário agendado          | MÉDIA      |
+| RF-007 | Permitir que administradores possam cadastrar e gerenciar salas disponíveis   | ALTA       |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+| ID      | Descrição do Requisito                                                                | Prioridade |
+| ------- | ------------------------------------------------------------------------------------- | ---------- |
+| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos desktop, tablets e mobile | ALTA       |
+| RNF-002 | Deve processar requisições do usuário em no máximo 3s                                 |  BAIXA     |
+| RNF-003 | O sistema deve garantir disponibilidade de 99,9%                                      | MÉDIA      |
+| RNF-004 | O sistema deve permitir logs e auditoria para rastreamento de ações dos usuários      |  BAIXA     |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
 - [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
+  (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
+  correspondem a uma funcionalidade que deve estar presente na
   plataforma (ex: cadastro de usuário).
 - [Requisitos Não Funcionais
   (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
   correspondem a uma característica técnica, seja de usabilidade,
   desempenho, confiabilidade, segurança ou outro (ex: suporte a
   dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+  Lembre-se que cada requisito deve corresponder à uma e somente uma
+  característica alvo da sua solução. Além disso, certifique-se de que
+  todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 > **Links Úteis**:
+>
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
@@ -90,15 +103,15 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-| ID  | Restrição | Solução |
-|----|-------------------------------------------------------|--------------------------------------------------------------|
-| 01 | O projeto deverá ser entregue até o final do semestre | Utilizar metodologias ágeis (Scrum/Kanban) e priorizar MVP para garantir entregas iterativas. |
-| 02 | Não pode ser desenvolvido um módulo de backend | Utilizar serviços de terceiros como Firebase, Supabase ou AWS Amplify para gerenciar autenticação e banco de dados. |
-| 03 | A aplicação deve ser multiplataforma (web e mobile) | Utilizar frameworks como React (Next.js) para web e React Native ou Flutter para mobile. |
-| 04 | Deve utilizar serviços de terceiros para backend | Integrar APIs externas para funcionalidades como autenticação, armazenamento e notificações. |
-| 05 | A comunicação entre frontend e backend deve ser eficiente e confiável | Implementar GraphQL ou otimizar chamadas REST com cache e WebSockets para atualizações em tempo real. |
-| 06 | O gerenciamento de agendamentos deve respeitar as limitações das APIs utilizadas | Definir regras de negócios diretamente no frontend e utilizar funções serverless para operações críticas. |
-| 07 | Medidas de segurança devem ser adotadas para proteção dos dados dos usuários | Implementar autenticação segura (OAuth, Firebase Auth) e criptografia para armazenamento de dados sensíveis. |
+| ID  | Restrição                                                                        | Solução                                                                                                             |
+| --- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 01  | O projeto deverá ser entregue até o final do semestre                            | Utilizar metodologias ágeis (Scrum/Kanban) e priorizar MVP para garantir entregas iterativas.                       |
+| 02  | Não pode ser desenvolvido um módulo de backend                                   | Utilizar serviços de terceiros como Firebase, Supabase ou AWS Amplify para gerenciar autenticação e banco de dados. |
+| 03  | A aplicação deve ser multiplataforma (web e mobile)                              | Utilizar frameworks como React (Next.js) para web e React Native ou Flutter para mobile.                            |
+| 04  | Deve utilizar serviços de terceiros para backend                                 | Integrar APIs externas para funcionalidades como autenticação, armazenamento e notificações.                        |
+| 05  | A comunicação entre frontend e backend deve ser eficiente e confiável            | Implementar GraphQL ou otimizar chamadas REST com cache e WebSockets para atualizações em tempo real.               |
+| 06  | O gerenciamento de agendamentos deve respeitar as limitações das APIs utilizadas | Definir regras de negócios diretamente no frontend e utilizar funções serverless para operações críticas.           |
+| 07  | Medidas de segurança devem ser adotadas para proteção dos dados dos usuários     | Implementar autenticação segura (OAuth, Firebase Auth) e criptografia para armazenamento de dados sensíveis.        |
 
 # Catálogo de Serviços
 
