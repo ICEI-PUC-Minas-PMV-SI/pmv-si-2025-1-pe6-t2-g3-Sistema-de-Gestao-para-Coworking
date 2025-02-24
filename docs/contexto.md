@@ -102,7 +102,59 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+Este catálogo descreve os serviços que compõem a aplicação, detalhando suas funcionalidades e endpoints.
+
+## Login Authentication Service (Autenticação e Gestão de Usuários)  
+ **Função:** Gerencia autenticação, cadastro de usuários e controle de acessos.  
+
+### Funcionalidades  
+- Autenticação JWT (JSON Web Token).  
+- Cadastro e gerenciamento de usuários.  
+- Recuperação de senha e alteração de dados.  
+
+### Endpoints  
+| Método  | Endpoint                  | Descrição |
+|---------|---------------------------|------------|
+| `POST`  | `/auth/login`             | Autentica o usuário e retorna um token JWT. |
+| `POST`  | `/auth/register`          | Cadastra um novo usuário. |
+| `GET`   | `/auth/me`                | Retorna informações do usuário autenticado. |
+
+---
+
+## Reservation Service (Serviço de Reservas de Salas)  
+ **Função:** Gerencia o agendamento e controle de reservas de espaços de coworking.  
+
+### Funcionalidades  
+- Criação, consulta e cancelamento de reservas.  
+- Validação de disponibilidade de salas.  
+- Controle de tempo de uso e regras de cancelamento.  
+
+### Endpoints  
+| Método  | Endpoint                      | Descrição |
+|---------|--------------------------------|------------|
+| `POST`  | `/reservations/create`        | Cria uma nova reserva para um espaço. |
+| `GET`   | `/reservations/{id}`          | Consulta uma reserva específica. |
+| `DELETE`| `/reservations/{id}`          | Cancela uma reserva existente. |
+| `GET`   | `/reservations/available`     | Verifica disponibilidade de salas. |
+
+---
+
+## Workspace Management Service (Gerenciamento de Espaços)  
+ **Função:** Responsável por gerenciar os espaços disponíveis no coworking, incluindo capacidade, descrição e horários.  
+
+### 🛠 Funcionalidades  
+- Cadastro e edição de espaços disponíveis.  
+- Definição de capacidade máxima e horários de funcionamento.  
+- Gerenciamento de recursos do espaço (Wi-Fi, café, projetores, etc.).  
+
+### Endpoints  
+| Método  | Endpoint                | Descrição |
+|---------|-------------------------|------------|
+| `POST`  | `/workspace/create`     | Cria um novo espaço de coworking. |
+| `GET`   | `/workspace/{id}`       | Consulta detalhes de um espaço específico. |
+| `PUT`   | `/workspace/{id}`       | Atualiza as informações do espaço. |
+| `DELETE`| `/workspace/{id}`       | Remove um espaço do sistema. |
+
 
 # Arquitetura da Solução
 
