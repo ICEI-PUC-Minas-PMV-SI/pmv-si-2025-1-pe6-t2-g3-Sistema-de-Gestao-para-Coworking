@@ -32,13 +32,13 @@ Criar uma interface intuitiva para gerenciamento de reservas:
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A criação de um ambiente de coworking com um sistema de gestão de reservas eficiente é uma solução estratégica para enfrentar os desafios recorrentes nesse tipo de espaço, como a sobreposição de reservas, a complexidade no processo de agendamento e a falta de visibilidade clara sobre a disponibilidade das salas. Esses problemas, quando não resolvidos, geram frustração, perda de tempo e insatisfação entre os usuários, impactando diretamente a produtividade e a experiência no espaço. Para startups, profissionais autônomos e equipes remotas, que são o público principal dos coworkings, a agilidade e a praticidade são fatores decisivos na escolha de um local para trabalhar. Portanto, um sistema de reservas ineficiente pode levar à perda de clientes e à redução da competitividade do espaço no mercado.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A sobreposição de reservas, por exemplo, é um problema comum em ambientes onde o processo de agendamento não é centralizado ou automatizado. Quando duas ou mais pessoas tentam usar a mesma sala no mesmo horário, surgem conflitos que podem gerar desconforto e desorganização. Além disso, a falta de um sistema intuitivo e de fácil acesso dificulta o processo de reserva, desmotivando os usuários e levando-os a buscar alternativas mais simples e eficientes. Isso é especialmente crítico em um cenário onde a concorrência entre espaços de coworking está em alta, e a experiência do usuário se torna um diferencial competitivo.
 
-> **Links Úteis**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Além de melhorar a experiência do usuário, um sistema de gestão de reservas eficiente traz benefícios significativos para os gestores do espaço. Ele permite a otimização da ocupação das salas, reduzindo a ociosidade e aumentando a rentabilidade do negócio. Com dados em tempo real sobre o uso do espaço, os gestores podem tomar decisões mais informadas, identificar padrões de utilização e implementar melhorias contínuas. Ferramentas de análise integradas ao sistema também possibilitam o monitoramento de métricas importantes, como taxa de ocupação, preferências dos usuários e horários de pico, contribuindo para uma gestão mais estratégica e eficaz.
+
+Em resumo, a implementação de um sistema de gestão de reservas eficiente em um ambiente de coworking não apenas resolve os problemas atuais relacionados à marcação de salas, mas também agrega valor ao negócio. Ele proporciona uma experiência superior para os usuários, com agilidade, transparência e praticidade, ao mesmo tempo em que oferece ferramentas estratégicas para os gestores, como otimização de recursos e análise de dados. Essa solução está alinhada com as tendências do mercado, que valoriza a flexibilidade, a inovação e a qualidade dos serviços, garantindo a competitividade e o crescimento do espaço de coworking.
 
 ## Público-Alvo
 
