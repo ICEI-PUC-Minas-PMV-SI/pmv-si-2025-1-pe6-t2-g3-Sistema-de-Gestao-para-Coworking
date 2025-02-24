@@ -3,25 +3,27 @@
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+O problema da marcação de salas em um ambiente de coworking é um dos principais desafios enfrentados por gestores e usuários desses espaços. Em um contexto onde startups e profissionais autônomos buscam flexibilidade e praticidade, a gestão eficiente das reservas de salas é crucial para garantir uma experiência positiva e evitar conflitos que possam prejudicar a produtividade e a satisfação dos usuários.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Um dos principais problemas é a sobreposição de reservas. Em um espaço de coworking, onde várias pessoas ou equipes compartilham os mesmos recursos, é comum que ocorram conflitos de agendamento, especialmente se o processo de reserva não for centralizado ou automatizado. Isso pode levar a situações em que duas ou mais pessoas tentam usar a mesma sala no mesmo horário, causando frustração e perda de tempo. A complexidade no processo de reserva também é um ponto crítico. Se o sistema for complicado ou exigir muitas etapas para realizar uma reserva, os usuários podem desistir de usar o espaço ou buscar alternativas mais simples. Isso é particularmente relevante para profissionais autônomos e startups, que muitas vezes precisam de agilidade e praticidade para focar em suas atividades principais.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Em resumo, o problema da marcação de salas em um coworking envolve uma série de desafios, desde a sobreposição de reservas e a dificuldade em visualizar a disponibilidade até a complexidade no processo de reserva e a falta de flexibilidade. Um sistema de gestão eficiente deve resolver esses problemas, oferecendo uma experiência ágil, intuitiva e integrada para os usuários, ao mesmo tempo em que fornece ferramentas de controle e análise para os gestores do espaço.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Objetivo Geral
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver um sistema de agendamento de salas presenciais para reuniões, garantindo uma solução eficiente, segura e de fácil usabilidade. O sistema permitirá que os usuários façam reservas em salas predefinidas, otimizando o uso dos espaços disponíveis na organização.
+
+Objetivos Específicos
+
+-Implementar um sistema seguro de autenticação e controle de acesso
+ *Desenvolver um mecanismo de login para os usuários.
+ *Avaliar e aplicar práticas de segurança, como armazenamento seguro de senhas e proteção contra acessos indevidos.
+
+-Criar uma interface intuitiva para gerenciamento de reservas
+ *Desenvolver um design responsivo e acessível para facilitar a experiência do usuário.
+ *Implementar funcionalidades que permitam visualizar, cadastrar e cancelar reservas de forma eficiente.
 
 ## Justificativa
 
@@ -34,17 +36,17 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Este Sistema de Gestão para Coworking é voltado para a gestão de agendamentos de salas presenciais em Belo Horizonte. O projeto tem como foco startups e profissionais autônomos que buscam um ambiente flexível para trabalho colaborativo. A seguir, detalhamos os principais perfis de usuários:
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+- **Empreendedores e Fundadores de Startups:** Homens e mulheres, de 25 a 40 anos, formação superior em Administração, Marketing, TI ou Design, solteiros(as) ou casados(as), que frequentam regiões centrais de Belo Horizonte como Savassi e Funcionários e procuram um escritório inicial para suas reuniões.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+- **Desenvolvedores e Designers de Startups:** Pessoas de 20 a 35 anos, cursando ou formados em TI, Ciência da Computação ou Design Gráfico, solteiros(as) ou em relacionamento, que buscam ambientes colaborativos e cafés em regiões inovadoras de Belo Horizonte.
 
+- **Profissionais de Marketing e Vendas de Startups:** Homens e mulheres, de 22 a 40 anos, com formação em Marketing, Publicidade ou Administração, solteiros(as) ou casados(as), frequentam regiões com networking ativo como Savassi e Lourdes.
+
+- **Consultores e Profissionais Autônomos:** Homens e mulheres, de 25 a 45 anos, com formação em Administração, TI, Marketing ou Design, solteiros(as) ou casados(as) com horários flexíveis, que utilizam coworking para reuniões com clientes em centros empresariais de Belo Horizonte.
+
+- **Freelancers e Profissionais Remotos:** Homens e mulheres, de 22 a 40 anos, com formação em TI, Design, Marketing ou Jornalismo, solteiros(as) ou casados(as) com horários flexíveis, que buscam ambientes produtivos e inspiradores em bairros com boa infraestrutura em Belo Horizonte.
 # Especificações do Projeto
 
 ## Requisitos
@@ -84,12 +86,15 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+| ID  | Restrição | Solução |
+|----|-------------------------------------------------------|--------------------------------------------------------------|
+| 01 | O projeto deverá ser entregue até o final do semestre | Utilizar metodologias ágeis (Scrum/Kanban) e priorizar MVP para garantir entregas iterativas. |
+| 02 | Não pode ser desenvolvido um módulo de backend | Utilizar serviços de terceiros como Firebase, Supabase ou AWS Amplify para gerenciar autenticação e banco de dados. |
+| 03 | A aplicação deve ser multiplataforma (web e mobile) | Utilizar frameworks como React (Next.js) para web e React Native ou Flutter para mobile. |
+| 04 | Deve utilizar serviços de terceiros para backend | Integrar APIs externas para funcionalidades como autenticação, armazenamento e notificações. |
+| 05 | A comunicação entre frontend e backend deve ser eficiente e confiável | Implementar GraphQL ou otimizar chamadas REST com cache e WebSockets para atualizações em tempo real. |
+| 06 | O gerenciamento de agendamentos deve respeitar as limitações das APIs utilizadas | Definir regras de negócios diretamente no frontend e utilizar funções serverless para operações críticas. |
+| 07 | Medidas de segurança devem ser adotadas para proteção dos dados dos usuários | Implementar autenticação segura (OAuth, Firebase Auth) e criptografia para armazenamento de dados sensíveis. |
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
