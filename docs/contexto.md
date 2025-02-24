@@ -135,7 +135,7 @@ Este catálogo descreve os serviços que compõem a aplicação, detalhando suas
 ## Workspace Management Service (Gerenciamento de Espaços)  
  **Função:** Responsável por gerenciar os espaços disponíveis no coworking, incluindo capacidade, descrição e horários.  
 
-### 🛠 Funcionalidades  
+### Funcionalidades  
 - Cadastro e edição de espaços disponíveis.  
 - Definição de capacidade máxima e horários de funcionamento.  
 - Gerenciamento de recursos do espaço (Wi-Fi, café, projetores, etc.).  
