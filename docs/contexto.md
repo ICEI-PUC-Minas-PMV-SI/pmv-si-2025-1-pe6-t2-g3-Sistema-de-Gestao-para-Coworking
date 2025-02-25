@@ -81,19 +81,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RNF-003 | O sistema deve garantir disponibilidade de 99,9%                                      | MÉDIA      |
 | RNF-004 | O sistema deve permitir logs e auditoria para rastreamento de ações dos usuários      |  BAIXA     |
 
-## Restrições
+# Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-| ID  | Restrição                                                                        | Solução                                                                                                             |
-| --- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| 01  | O projeto deverá ser entregue até o final do semestre                            | Utilizar metodologias ágeis (Scrum/Kanban) e priorizar MVP para garantir entregas iterativas.                       |
-| 02  | Não pode ser desenvolvido um módulo de backend                                   | Utilizar serviços de terceiros como Firebase, Supabase ou AWS Amplify para gerenciar autenticação e banco de dados. |
-| 03  | A aplicação deve ser multiplataforma (web e mobile)                              | Utilizar frameworks como React (Next.js) para web e React Native ou Flutter para mobile.                            |
-| 04  | Deve utilizar serviços de terceiros para backend                                 | Integrar APIs externas para funcionalidades como autenticação, armazenamento e notificações.                        |
-| 05  | A comunicação entre frontend e backend deve ser eficiente e confiável            | Implementar GraphQL ou otimizar chamadas REST com cache e WebSockets para atualizações em tempo real.               |
-| 06  | O gerenciamento de agendamentos deve respeitar as limitações das APIs utilizadas | Definir regras de negócios diretamente no frontend e utilizar funções serverless para operações críticas.           |
-| 07  | Medidas de segurança devem ser adotadas para proteção dos dados dos usuários     | Implementar autenticação segura (OAuth, Firebase Auth) e criptografia para armazenamento de dados sensíveis.        |
+| ID  | Restrição                                                                       | Solução                                                                                                               |
+| --- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 01  | O sistema deve ser responsivo para rodar em dispositivos desktop, tablets e mobile | Utilização de frameworks como Flutter para garantir compatibilidade multiplataforma. |
+| 02  | O sistema deve processar requisições do usuário em no máximo 3 segundos            | Implementação de técnicas de otimização, como caching, indexação de banco de dados e balanceamento de carga.           |
+| 03  | O sistema deve garantir disponibilidade de 99,9%                                  | Hospedagem em nuvem com alta disponibilidade e redundância, além de uso de monitoramento e alertas em tempo real.      |
+| 04  | O sistema deve permitir que o usuário se registre e faça login no site           | Implementação de autenticação segura (OAuth ou JWT) e verificação de dados no backend para garantir login confiável.  |
+| 05  | O sistema deve permitir que o usuário realize reservas de salas no site          | Desenvolvimento de uma API RESTful eficiente para gerenciar reservas e garantir a precisão na disponibilidade das salas. |
+| 06  | O sistema deve permitir que o usuário visualize, edite e cancele suas reservas    | Criação de endpoints de API para editar e cancelar reservas, com validações para evitar erros de processamento.      |
+| 07  | O sistema deve permitir que administradores possam cadastrar e gerenciar salas disponíveis | Implementação de uma interface administrativa que permita cadastro e edição de salas diretamente no sistema. |
+| 08  | O sistema deve garantir segurança dos dados dos usuários                         | Implementação de criptografia no armazenamento e comunicação dos dados, e uso de práticas de segurança no backend (SSL/TLS, criptografia de senha). |
+| 09  | O sistema deve permitir logs e auditoria para rastreamento de ações dos usuários | Implementação de um sistema de logging centralizado (ex: ELK stack) para rastrear interações e ações no sistema.      |
 
 # Catálogo de Serviços
 
