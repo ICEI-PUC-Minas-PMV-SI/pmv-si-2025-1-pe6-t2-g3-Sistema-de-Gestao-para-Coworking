@@ -99,58 +99,41 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Catálogo de Serviços
 
-Este catálogo descreve os serviços que compõem a aplicação, detalhando suas funcionalidades e endpoints.
+## 1. Gerenciamento de Usuários
+- Cadastro e gerenciamento de usuários na plataforma.
+- Login e autenticação para acesso ao sistema.
+- Recuperação de credenciais.
 
-## Login Authentication Service (Autenticação e Gestão de Usuários)  
- **Função:** Gerencia autenticação, cadastro de usuários e controle de acessos.  
+## 2. Reserva de Espaços
+- Consulta de disponibilidade de salas.
+- Realização de reservas de salas de coworking.
+- Cancelamento e gerenciamento de reservas realizadas.
 
-### Funcionalidades  
-- Autenticação JWT (JSON Web Token).  
-- Cadastro e gerenciamento de usuários.  
-- Recuperação de senha e alteração de dados.  
+## 3. Administração de Espaços
+- Cadastro e edição de informações sobre os espaços.
+- Definição de regras para uso das salas.
+- Monitoramento da ocupação das salas.
 
-### Endpoints  
-| Método  | Endpoint                  | Descrição |
-|---------|---------------------------|------------|
-| `POST`  | `/auth/login`             | Autentica o usuário e retorna um token JWT. |
-| `POST`  | `/auth/register`          | Cadastra um novo usuário. |
-| `GET`   | `/auth/me`                | Retorna informações do usuário autenticado. |
+## 4. Controle de Acesso
+- Permissão de acesso conforme perfil de usuário.
+- Gerenciamento de diferentes níveis de acesso para administradores e usuários comuns.
 
----
+## 5. Interface Multiplataforma
+- Acesso ao sistema por meio de aplicação web e mobile.
+- Interface responsiva para diferentes dispositivos.
 
-## Reservation Service (Serviço de Reservas de Salas)  
- **Função:** Gerencia o agendamento e controle de reservas de espaços de coworking.  
+## 6. Armazenamento de Dados
+- Registro de informações de reservas, usuários e espaços.
+- Manutenção da integridade dos dados na base de dados.
 
-### Funcionalidades  
-- Criação, consulta e cancelamento de reservas.  
-- Validação de disponibilidade de salas.  
-- Controle de tempo de uso e regras de cancelamento.  
+## 7. Relatórios e Análises
+- Geração de relatórios sobre a ocupação das salas.
+- Análise de dados para otimização do uso dos espaços.
 
-### Endpoints  
-| Método  | Endpoint                      | Descrição |
-|---------|--------------------------------|------------|
-| `POST`  | `/reservations/create`        | Cria uma nova reserva para um espaço. |
-| `GET`   | `/reservations/{id}`          | Consulta uma reserva específica. |
-| `DELETE`| `/reservations/{id}`          | Cancela uma reserva existente. |
-| `GET`   | `/reservations/available`     | Verifica disponibilidade de salas. |
-
----
-
-## Workspace Management Service (Gerenciamento de Espaços)  
- **Função:** Responsável por gerenciar os espaços disponíveis no coworking, incluindo capacidade, descrição e horários.  
-
-### Funcionalidades  
-- Cadastro e edição de espaços disponíveis.  
-- Definição de capacidade máxima e horários de funcionamento.  
-- Gerenciamento de recursos do espaço (Wi-Fi, café, projetores, etc.).  
-
-### Endpoints  
-| Método  | Endpoint                | Descrição |
-|---------|-------------------------|------------|
-| `POST`  | `/workspace/create`     | Cria um novo espaço de coworking. |
-| `GET`   | `/workspace/{id}`       | Consulta detalhes de um espaço específico. |
-| `PUT`   | `/workspace/{id}`       | Atualiza as informações do espaço. |
-| `DELETE`| `/workspace/{id}`       | Remove um espaço do sistema. |
+## 8. Auditoria e Logs
+- Registro de eventos e atividades realizadas no sistema.
+- Armazenamento de logs para rastreamento de ações.
+- Consulta e exportação de logs para fins de auditoria.
 
 
 # Arquitetura da Solução
