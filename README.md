@@ -1,4 +1,4 @@
-# Sistema de Gestão para Coworking - Borora
+# Sistema de Gestão para Coworking
 
 `CURSO: Sistemas de Informação`
 
