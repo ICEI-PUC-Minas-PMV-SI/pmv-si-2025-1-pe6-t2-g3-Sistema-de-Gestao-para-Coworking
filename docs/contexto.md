@@ -1,11 +1,10 @@
 # Introdução
 
-Este projeto tem como objetivo o desenvolvimento de um sistema distribuído para a gestão e aluguel de espaços de coworking em Belo Horizonte. A aplicação será composta por três camadas principais: um backend responsável pela lógica de negócio e serviços de API, um frontend para acesso via aplicação web e um aplicativo mobile, garantindo acessibilidade e usabilidade multiplataforma.
+Nos últimos anos, os espaços de coworking se tornaram uma alternativa popular para profissionais autônomos, startups e equipes remotas que buscam flexibilidade e um ambiente colaborativo. No entanto, a gestão eficiente das reservas de salas ainda é um desafio, resultando em sobreposição de agendamentos, falta de transparência na disponibilidade e processos burocráticos para marcação e cancelamento. Esses problemas podem gerar frustração entre os usuários e impactar a produtividade, tornando essencial a implementação de um sistema automatizado e intuitivo.
 
-O sistema permitirá que usuários realizem agendamentos de salas, gerenciem suas reservas e acessem informações sobre os espaços disponíveis. Para isso, será adotada uma arquitetura distribuída, visando escalabilidade, confiabilidade e eficiência na comunicação entre os componentes. O backend será implementado utilizando serviços de API, conforme as necessidades da aplicação. O frontend e o aplicativo mobile consumirão essas APIs para oferecer uma experiência intuitiva e responsiva aos usuários.
-
+Para solucionar essas dificuldades, este sistema foi desenvolvido com o objetivo de garantir um processo de agendamento eficiente, seguro e acessível. A plataforma permitirá que profissionais consultem a disponibilidade dos espaços em tempo real, realizem agendamentos de forma simplificada e evitem conflitos de horário. Além disso, oferecerá ferramentas para os gestores monitorarem a ocupação das salas e otimizarem o uso dos recursos disponíveis.
+Com o crescimento do trabalho remoto e a necessidade de ambientes dinâmicos, soluções tecnológicas voltadas para a gestão de coworkings são cada vez mais relevantes. Um sistema eficiente de reservas melhora a experiência dos usuários, reduz problemas operacionais e possibilita uma administração mais estratégica dos espaços, contribuindo para a competitividade e o crescimento do negócio.
 ## Problema
-
 O problema da marcação de salas em um ambiente de coworking é um dos principais desafios enfrentados por gestores e usuários desses espaços. Em um contexto onde startups e profissionais autônomos buscam flexibilidade e praticidade, a gestão eficiente das reservas de salas é crucial para garantir uma experiência positiva e evitar conflitos que possam prejudicar a produtividade e a satisfação dos usuários.
 
 Um dos principais problemas é a sobreposição de reservas. Em um espaço de coworking, onde várias pessoas ou equipes compartilham os mesmos recursos, é comum que ocorram conflitos de agendamento, especialmente se o processo de reserva não for centralizado ou automatizado. Isso pode levar a situações em que duas ou mais pessoas tentam usar a mesma sala no mesmo horário, causando frustração e perda de tempo. A complexidade no processo de reserva também é um ponto crítico. Se o sistema for complicado ou exigir muitas etapas para realizar uma reserva, os usuários podem desistir de usar o espaço ou buscar alternativas mais simples. Isso é particularmente relevante para profissionais autônomos e startups, que muitas vezes precisam de agilidade e praticidade para focar em suas atividades principais.
@@ -82,20 +81,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RNF-004 | O sistema deve permitir logs e auditoria para rastreamento de ações dos usuários      |  BAIXA     |
 
 # Restrições
-
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-| ID  | Restrição                                                                       | Solução                                                                                                               |
-| --- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| 01  | O sistema deve ser responsivo para rodar em dispositivos desktop, tablets e mobile | Utilização de frameworks como Flutter para garantir compatibilidade multiplataforma. |
-| 02  | O sistema deve processar requisições do usuário em no máximo 3 segundos            | Implementação de técnicas de otimização, como caching, indexação de banco de dados e balanceamento de carga.           |
-| 03  | O sistema deve garantir disponibilidade de 99,9%                                  | Hospedagem em nuvem com alta disponibilidade e redundância, além de uso de monitoramento e alertas em tempo real.      |
-| 04  | O sistema deve permitir que o usuário se registre e faça login no site           | Implementação de autenticação segura (OAuth ou JWT) e verificação de dados no backend para garantir login confiável.  |
-| 05  | O sistema deve permitir que o usuário realize reservas de salas no site          | Desenvolvimento de uma API RESTful eficiente para gerenciar reservas e garantir a precisão na disponibilidade das salas. |
-| 06  | O sistema deve permitir que o usuário visualize, edite e cancele suas reservas    | Criação de endpoints de API para editar e cancelar reservas, com validações para evitar erros de processamento.      |
-| 07  | O sistema deve permitir que administradores possam cadastrar e gerenciar salas disponíveis | Implementação de uma interface administrativa que permita cadastro e edição de salas diretamente no sistema. |
-| 08  | O sistema deve garantir segurança dos dados dos usuários                         | Implementação de criptografia no armazenamento e comunicação dos dados, e uso de práticas de segurança no backend (SSL/TLS, criptografia de senha). |
-| 09  | O sistema deve permitir logs e auditoria para rastreamento de ações dos usuários | Implementação de um sistema de logging centralizado (ex: ELK stack) para rastrear interações e ações no sistema.      |
 
 # Catálogo de Serviços
 
