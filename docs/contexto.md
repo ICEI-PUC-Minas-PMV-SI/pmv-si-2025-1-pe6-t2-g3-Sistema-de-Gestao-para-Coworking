@@ -53,6 +53,8 @@ Este Sistema de Gestão para Coworking é voltado para a gestão de agendamentos
 
 - **Freelancers e Profissionais Remotos:** Homens e mulheres, de 22 a 40 anos, com formação em TI, Design, Marketing ou Jornalismo, solteiros(as) ou casados(as) com horários flexíveis, que buscam ambientes produtivos e inspiradores em bairros com boa infraestrutura em Belo Horizonte.
 
+---
+
 # Especificações do Projeto
 
 ## Requisitos
@@ -75,12 +77,48 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 | ID      | Descrição do Requisito                                                                | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos desktop, tablets e mobile | ALTA       |
-| RNF-002 | Deve processar requisições do usuário em no máximo 3s                                 |  BAIXA     |
-| RNF-003 | O sistema deve garantir disponibilidade de 99,9%                                      | MÉDIA      |
-| RNF-004 | O sistema deve permitir logs e auditoria para rastreamento de ações dos usuários      |  BAIXA     |
+| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos desktop, tablets e mobile | ALTA |
+| RNF-002 | Deve processar requisições do usuário em no máximo 3s                                 | BAIXA |
+| RNF-003 | O sistema deve garantir disponibilidade de 99,9%                                      | MÉDIA |
+| RNF-004 | O sistema deve permitir logs e auditoria para rastreamento de ações dos usuários      | BAIXA |
 
-# Restrições
+### Divisão de tarefas/atividades no grupo
+
+| Atividade | Responsável |
+| ------- | ----------|
+| Backend | Lucas Borges Silva e Raphaela Tamietto Rios |
+| Frontend | Lucas Borges Silva e Gabriel Vilhena Magri |
+| Mobile | Gabriel Vilhena Magri e Ian Faria Chamone |
+| Testing | Guilherme Pereira Carneiro |
+| Documentação | Raphaela Tamietto Rios e Ian Faria Chamone |
+| Interfaces | Iyan Lucas Duarte Marques e Guilherme Pereira Carneiro |
+| Infraestrutura | Iyan Lucas Duarte Marques |
+| Líder | Arthur Andrade de Oliveira |
+
+## Restrições
+
+### Restrições do Projeto
+
+O projeto está restrito pelos seguintes itens:
+
+| ID  | Restrição                                      |
+|-----|------------------------------------------------|
+| 01  | O projeto deverá ser entregue até o final do semestre. |
+| 02  | Falta de orçamento no projeto.                 |
+
+### Impacto das Restrições na Solução
+
+1. **Prazo de Entrega**  
+   - O prazo limitado (final do semestre) exige um cronograma bem definido e priorização de funcionalidades essenciais.  
+   - A solução deve ser desenvolvida de forma ágil, com foco em entregar um produto mínimo viável (MVP) que atenda aos requisitos básicos do sistema.  
+   - Ferramentas e frameworks que aceleram o desenvolvimento, como react ou flutter. 
+
+2. **Falta de Orçamento**  
+   - A falta de orçamento limita o uso de ferramentas pagas, serviços cloud premium ou contratação de equipe adicional. 
+   - A solução deve priorizar tecnologias de código aberto ou gratuitas, como frameworks, bibliotecas e serviços gratuitos.  
+   - A infraestrutura deve ser planejada para utilizar recursos gratuitos ou de baixo custo, como serviços de hospedagem gratuitos (ex.: AWS com os créditos fornecidos pelo professor).  
+
+---
 
 # Catálogo de Serviços
 
@@ -120,6 +158,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 - Armazenamento de logs para rastreamento de ações.
 - Consulta e exportação de logs para fins de auditoria.
 
+---
 
 # Arquitetura da Solução
 
