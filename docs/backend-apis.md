@@ -411,23 +411,24 @@ json
   - param1: [descrição]
 - Resposta:
 
-- Sucesso (200 OK) ```
+- Sucesso (200 OK) 
+```
     {
       "message": "Success",
       "data": {
         ...
       }
     }
-    ```
-  - Erro (4XX, 5XX)
-    ```
+```
+- Erro (4XX, 5XX)
+```
     {
       "message": "Error",
       "error": {
         ...
       }
     }
-    ```
+```
 
 ## Considerações de Segurança
 
