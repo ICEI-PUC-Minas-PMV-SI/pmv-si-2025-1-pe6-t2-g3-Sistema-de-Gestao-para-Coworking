@@ -8,9 +8,30 @@ Aqui estão algumas etapas importantes que devem ser consideradas no planejament
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
+### Disponibilizar um serviço centralizado para a gestão de reservas de salas  
 
-[Inclua os objetivos da sua api.]
+- Permitir que os usuários consultem a disponibilidade das salas em tempo real.  
+- Permitir a realização, alteração e cancelamento de reservas de forma eficiente, evitando conflitos de agendamento por meio de regras de negócio definidas.  
+
+### Garantir segurança e controle de acesso  
+
+- Implementar autenticação de usuários (ex.: login com e-mail e senha) e suporte a múltiplos níveis de acesso (usuários comuns e administradores).  
+- Armazenar credenciais de forma segura utilizando hash e criptografia para proteger dados sensíveis.  
+
+### Fornecer integração e escalabilidade  
+
+- Disponibilizar endpoints bem documentados para possível integração com outros sistemas (ex.: sistemas de pagamento, notificações externas, etc.).  
+- Garantir escalabilidade com uma estrutura que permita fácil expansão no futuro, mesmo que inicialmente a API funcione de forma monolítica.  
+
+### Oferecer uma experiência fluida e responsiva  
+
+- Otimizar tempos de resposta processando requisições de forma eficiente.  
+- Retornar dados em formato JSON para facilitar a integração com aplicações web e mobile.  
+
+### Facilitar a administração do coworking  
+
+- Permitir que administradores cadastrem, editem e removam salas disponíveis no sistema.  
+- Disponibilizar geração de relatórios simples sobre ocupação e uso dos espaços, permitindo análise básica de dados para otimizar a gestão do coworking.  
 
 
 ## Modelagem da Aplicação
