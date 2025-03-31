@@ -21,7 +21,7 @@ Aqui estão algumas etapas importantes que devem ser consideradas no planejament
 ### Fornecer integração e escalabilidade  
 
 - Disponibilizar endpoints bem documentados para possível integração com outros sistemas (ex.: sistemas de pagamento, notificações externas, etc.).  
-- Garantir escalabilidade com uma estrutura que permita fácil expansão no futuro, mesmo que inicialmente a API funcione de forma monolítica.  
+- Garantir escalabilidade com uma estrutura que permita fácil expansão no futuro.  
 
 ### Oferecer uma experiência fluida e responsiva  
 
@@ -31,7 +31,7 @@ Aqui estão algumas etapas importantes que devem ser consideradas no planejament
 ### Facilitar a administração do coworking  
 
 - Permitir que administradores cadastrem, editem e removam salas disponíveis no sistema.  
-- Disponibilizar geração de relatórios simples sobre ocupação e uso dos espaços, permitindo análise básica de dados para otimizar a gestão do coworking.  
+- Disponibilizar geração de relatórios simples sobre ocupação e uso dos espaços, permitindo análise de dados para otimizar a gestão do coworking.  
 
 
 ## Modelagem da Aplicação
