@@ -1,10 +1,14 @@
-# APIs e Web Services
+## Sobre o Projeto
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
+O projeto é um Sistema de Gestão para Coworking, focado na reserva de salas presenciais em Belo Horizonte - MG. Ele permite que usuários realizem e gerenciem reservas de espaços de trabalho, garantindo eficiência e praticidade na administração do coworking. 
 
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
+## APIs e Web Services
+A aplicação expõe uma API RESTful segura, baseada em Spring Boot e Spring Security, para facilitar a integração com diferentes clientes (web, mobile).
 
-[Inclua uma breve descrição do projeto.]
+- APIs: Disponibilizam endpoints para autenticação, gerenciamento de usuários, reservas de salas e espaços de trabalho.
+- Web Services: Utilizam JSON como formato de troca de dados, seguindo padrões REST e boas práticas de segurança (JWT para autenticação).
+
+Esse modelo garante escalabilidade, interoperabilidade e segurança para o sistema. 
 
 ## Objetivos da API
 
@@ -33,16 +37,33 @@ Aqui estão algumas etapas importantes que devem ser consideradas no planejament
 - Permitir que administradores cadastrem, editem e removam salas disponíveis no sistema.  
 - Disponibilizar geração de relatórios simples sobre ocupação e uso dos espaços, permitindo análise de dados para otimizar a gestão do coworking.  
 
-
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
+A aplicação segue uma estrutura relacional baseada em entidades principais para gerenciar usuários, espaços de coworking e reservas.
+
+[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
+### Backend & API
+ Java (Spring Boot) – Framework robusto para criação de APIs RESTful com segurança e escalabilidade.
+ Spring Security – Implementação de autenticação e autorização, utilizando JWT para controle de acesso.
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+### Banco de Dados
+
+### Autenticação & Segurança
+ JWT (JSON Web Token) – Gerenciamento seguro de autenticação e autorização.
+ BCrypt – Hash de senhas para garantir proteção contra ataques.
+
+### Comunicação & Integração
+ JSON – Formato padrão de troca de dados entre cliente e servidor.
+ OpenAPI (Swagger) – Documentação interativa da API para facilitar testes e integração.
+ RESTful APIs – Padrão de arquitetura para garantir interoperabilidade.
+
+### Ferramentas de Desenvolvimento & Deploy
+ Docker – Contêinerização para garantir ambientes consistentes.
+ Git & GitHub – Controle de versão do código-fonte.
+ Postman – Testes e validação de requisições da API.
 
 ## API Endpoints
 
@@ -215,7 +236,7 @@ Abaixo está uma lista dos principais endpoints da API do sistema de agendamento
 
 - Método: GET
 - URL: /reservations/{id}
-- Parâmetros da Request: Nenhum. Será passado diretamente na rota.
+- Parâmetros da Request: Query Params.
   
   - Resposta:
 
@@ -250,7 +271,7 @@ Abaixo está uma lista dos principais endpoints da API do sistema de agendamento
 
 - Método: DELETE
 - URL: /reservations/{id}
-- Parâmetros da Request: Nenhum. Será passado diretamente na rota.
+- Parâmetros da Request: Query Params.
   
   - Resposta:
 
@@ -319,12 +340,56 @@ Abaixo está uma lista dos principais endpoints da API do sistema de agendamento
   }
 }
 ```
+### Endpoint:  ```GET /workspaces```
+
+- Método: GET
+- URL: /workspaces
+- Headers: Authorization: Bearer Token
+- Parâmetros da Request: Nenhum
+  
+  - Resposta:
+   
+- Sucesso (200 Created)
+```
+{
+  "message": "Workspaces retrieved successfully",
+  "data": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "workspace_name": "Sala de Reunião A",
+      "capacity": 10,
+      "location": "Andar 1 - Prédio Principal",
+      "created_at": "2025-03-23T12:00:00Z",
+      "updated_at": "2025-03-25T09:30:00Z"
+    },
+    {
+      "id": "660e8400-e29b-41d4-a716-446655440000",
+      "workspace_name": "Sala de Conferência B",
+      "capacity": 25,
+      "location": "Andar 2 - Prédio Anexo",
+      "created_at": "2025-03-22T15:45:00Z",
+      "updated_at": "2025-03-26T08:15:00Z"
+    }
+  ]
+}
+```
+ - Erro (401 Unauthorized - Token inválido ou ausente)
+```
+{
+  "message": "Unauthorized",
+  "error": {
+    "code": 401,
+    "message": "Invalid or missing authentication token."
+  }
+}
+```
+
 ### Endpoint:  ```GET /workspace/{id}```
 
 - Método: GET
 - URL: /workspace/{id}
 - Headers: Authorization: Bearer {jwt_token}
-- Parâmetros da Request: Nenhum. Será passado diretamente na rota.
+- Parâmetros da Request: Query Params.
   
   - Resposta:
    
@@ -401,7 +466,7 @@ json
 - Método: DELETE
 - URL: /workspace/{id}
 - Headers: Authorization: Bearer {jwt_token}
-- Parâmetros da Request: Nenhum. Será passado diretamente na rota.
+- Parâmetros da Request: Query Params.
   
   - Resposta:
 
@@ -422,38 +487,51 @@ json
   }
 }
 ```
-
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
-
-### Endpoint 1
-- Método: GET
-- URL: /endpoint1
-- Parâmetros:
-  - param1: [descrição]
-- Resposta:
-
-- Sucesso (200 OK) 
-```
-    {
-      "message": "Success",
-      "data": {
-        ...
-      }
-    }
-```
-- Erro (4XX, 5XX)
-```
-    {
-      "message": "Error",
-      "error": {
-        ...
-      }
-    }
-```
-
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+A segurança da aplicação é essencial para proteger dados sensíveis dos usuários e garantir que apenas usuários autorizados possam acessar e manipular informações. A seguir, estão as principais práticas adotadas para garantir a segurança da API distribuída.
+
+### Autenticação e Autorização
+#### Autenticação com JWT (JSON Web Token)
+
+A autenticação é baseada em JWT, utilizando a secret key gerada aleatoriamente:
+```3cfa76ef14937c1c0eA519f8fC017a50fcd04a2420f8e8bcd0a7567c272e007b```
+
+O token é gerado no login e deve ser enviado no header Authorization para autenticar as requisições:
+
+```Authorization: Bearer <token>```
+
+Cada token possui um tempo de expiração (expiresIn) para evitar reutilização indevida.
+
+#### Autorização baseada em roles (Spring Security)
+
+O sistema diferencia perfis de usuário (customer, admin) e restringe o acesso a determinadas rotas.
+
+Exemplo:
+
+- Apenas administradores podem gerenciar usuários e espaços.
+- Usuários normais podem criar, visualizar e cancelar suas próprias reservas.
+
+#### Proteção contra ataques de força bruta
+
+-Implementação de limitação de tentativas de login para evitar ataques de força bruta.
+-Exemplo: Bloqueio temporário após X tentativas falhas.
+
+### Proteção de Dados Sensíveis
+#### Criptografia de Senhas com BCrypt
+
+- As senhas não são armazenadas em texto puro, mas sim criptografadas com BCrypt.
+- O BCrypt gera um hash único para cada senha, impossibilitando a descriptografia direta.]
+
+#### Proteção de Tokens JWT
+- Os tokens não devem ser armazenados no localStorage no front-end (risco de XSS).
+- Devem ser armazenados de forma segura.
+
+#### Uso de HTTPS
+
+- Todas as comunicações são feitas via HTTPS, garantindo a criptografia dos dados durante a transmissão.
+
+A segurança foi integrada desde o início do desenvolvimento, garantindo proteção contra ataques, autenticação segura, e armazenamento seguro de credenciais. Todas as práticas adotadas ajudam a manter a integridade e confidencialidade dos dados no sistema.
 
 ## Implantação
 
