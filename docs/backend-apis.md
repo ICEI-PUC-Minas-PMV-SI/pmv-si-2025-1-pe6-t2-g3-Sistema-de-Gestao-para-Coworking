@@ -545,13 +545,38 @@ A segurança foi integrada desde o início do desenvolvimento, garantindo prote�
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+### **Testes Funcionais (Validação de Campos)**
+**Objetivo:** Verificar se a API aceita/rejeita entradas conforme as regras definidas.
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+#### **Cenários para o Campo `capacity` (Obrigatório, Numérico)**
+| Caso de Teste               | Entrada (`capacity`) | Resultado Esperado | Status |
+|-----------------------------|----------------------|--------------------|--------|
+| Valor numérico válido (0)   | `0`                  | ✅ 200 OK           | ✔️      |
+| Valor numérico válido (100) | `100`                | ✅ 200 OK           | ✔️      |
+| String vazia                | `""`                 | ❌ 400 Bad Request  | ✔️      |
+| String não numérica         | `"abc"`              | ❌ 400 Bad Request  | ✔️      |
+| Campo omitido               | (Ausente)            | ❌ 400 Bad Request  | ✔️      |
+
+#### **Cenários para o Campo `name` (Opcional)**
+| Caso de Teste          | Entrada (`name`) | Resultado Esperado | Status |
+|------------------------|------------------|--------------------|--------|
+| String vazia           | `""`             | ✅ 200 OK           | ✔️      |
+| Números                | `"123"`          | ✅ 200 OK           | ✔️      |
+| Texto normal           | `"Sala A1"`      | ✅ 200 OK           | ✔️      |
+| Campo omitido          | (Ausente)        | ✅ 200 OK           | ✔️      |
+
+#### **Cenários para o Campo `location` (Opcional)**
+| Caso de Teste          | Entrada (`location`) | Resultado Esperado | Status |
+|------------------------|----------------------|--------------------|--------|
+| String vazia           | `""`                 | ✅ 200 OK           | ✔️      |
+| Números                | `"456"`              | ✅ 200 OK           | ✔️      |
+| Texto normal           | `"Prédio B"`         | ✅ 200 OK           | ✔️      |
+| Campo omitido          | (Ausente)            | ✅ 200 OK           | ✔️      |
+
+## **Conclusão e Recomendações**
+- **Campo obrigatório:** Apenas `capacity` é estritamente necessário e deve ser um número.  
+- **Campos opcionais:** `name` e `location` podem ser omitidos ou enviados vazios.  
+- **Tratamento de erros:** A API retorna erro quando `capacity` está vazio, em formato inválido ou ausente.
 
 # Referências
 
