@@ -39,9 +39,9 @@ Esse modelo garante escalabilidade, interoperabilidade e segurança para o siste
 
 ## Modelagem da Aplicação
 
-A aplicação segue uma estrutura relacional baseada em entidades principais para gerenciar usuários, espaços de coworking e reservas.
+![arq](img/software-architect.png)
 
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+![bd](img/DER-BD-Backend.png)
 
 ## Tecnologias Utilizadas
 
@@ -580,4 +580,7 @@ A segurança foi integrada desde o início do desenvolvimento, garantindo prote�
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+-Microfundamento: APIs e Web Services
+-Microfundamento: Arquitetura de Software Distribuído
+-SpringBoot Docs
+-Stackoverflow
