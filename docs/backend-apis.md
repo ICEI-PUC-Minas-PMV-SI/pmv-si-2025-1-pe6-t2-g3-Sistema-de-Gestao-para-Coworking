@@ -545,38 +545,7 @@ A segurança foi integrada desde o início do desenvolvimento, garantindo prote�
 
 ## Testes
 
-### **Testes Funcionais (Validação de Campos)**
-**Objetivo:** Verificar se a API aceita/rejeita entradas conforme as regras definidas.
-
-#### **Cenários para o Campo `capacity` (Obrigatório, Numérico)**
-| Caso de Teste               | Entrada (`capacity`) | Resultado Esperado | Status |
-|-----------------------------|----------------------|--------------------|--------|
-| Valor numérico válido (0)   | `0`                  | ✅ 200 OK           | ✔️      |
-| Valor numérico válido (100) | `100`                | ✅ 200 OK           | ✔️      |
-| String vazia                | `""`                 | ❌ 400 Bad Request  | ✔️      |
-| String não numérica         | `"abc"`              | ❌ 400 Bad Request  | ✔️      |
-| Campo omitido               | (Ausente)            | ❌ 400 Bad Request  | ✔️      |
-
-#### **Cenários para o Campo `name` (Opcional)**
-| Caso de Teste          | Entrada (`name`) | Resultado Esperado | Status |
-|------------------------|------------------|--------------------|--------|
-| String vazia           | `""`             | ✅ 200 OK           | ✔️      |
-| Números                | `"123"`          | ✅ 200 OK           | ✔️      |
-| Texto normal           | `"Sala A1"`      | ✅ 200 OK           | ✔️      |
-| Campo omitido          | (Ausente)        | ✅ 200 OK           | ✔️      |
-
-#### **Cenários para o Campo `location` (Opcional)**
-| Caso de Teste          | Entrada (`location`) | Resultado Esperado | Status |
-|------------------------|----------------------|--------------------|--------|
-| String vazia           | `""`                 | ✅ 200 OK           | ✔️      |
-| Números                | `"456"`              | ✅ 200 OK           | ✔️      |
-| Texto normal           | `"Prédio B"`         | ✅ 200 OK           | ✔️      |
-| Campo omitido          | (Ausente)            | ✅ 200 OK           | ✔️      |
-
-## **Conclusão e Recomendações**
-- **Campo obrigatório:** Apenas `capacity` é estritamente necessário e deve ser um número.  
-- **Campos opcionais:** `name` e `location` podem ser omitidos ou enviados vazios.  
-- **Tratamento de erros:** A API retorna erro quando `capacity` está vazio, em formato inválido ou ausente.
+[Backend Testes](docs/backend-tests.md) <br> 
 
 # Referências
 
