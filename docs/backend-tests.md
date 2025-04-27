@@ -28,9 +28,18 @@ Foram realizados dois tipos de testes distintos:
 | Cenário                           | Requisição                   | Resultado Esperado         |
 |------------------------------------|-------------------------------|-----------------------------|
 | Login com credenciais válidas      | `POST /auth/login`            | 200 OK com token JWT        |
-| Login com senha incorreta          | `POST /auth/login`            | 401 Unauthorized            |
+| Login com credenciais inválidas    | `POST /auth/login`            | 500 Bad Credentials         |
 | Registro com dados válidos         | `POST /auth/register`         | 201 Created                 |
 | Registro com e-mail já utilizado   | `POST /auth/register`         | 400 Bad Request             |
+
+#### Evidências:
+- **Login com credenciais válidas** (`POST /auth/login`)
+
+![login200](img/Login%20200.png)
+
+- **Login com credenciais inválidas** (`POST /auth/login`)
+
+![login500](img/Login%20500.png)
 
 ---
 
@@ -39,10 +48,22 @@ Foram realizados dois tipos de testes distintos:
 | Cenário                                | Requisição                   | Resultado Esperado         |
 |----------------------------------------|-------------------------------|-----------------------------|
 | Criação de novo espaço válido           | `POST /workspace/create`      | 201 Created                 |
-| Consulta de todos os espaços            | `GET /workspaces`             | 200 OK                      |
 | Consulta de espaço por ID existente     | `GET /workspace/{id}`         | 200 OK                      |
-| Atualização de espaço inexistente       | `PUT /workspace/{id}`         | 404 Not Found               |
+| Atualização de espaço existente         | `PUT /workspace/{id}`         | 200 OK                      |
 | Exclusão de espaço existente            | `DELETE /workspace/{id}`      | 200 OK                      |
+
+#### Evidências:
+- **Criação de novo espaço válido** (`POST /workspace/create`)
+
+![CreateWorkspace200](img/Create%20Workspace%20200.png)
+
+- **Consulta de espaço por ID existente** (`GET /workspace/{id}`)
+
+![GetWorkspace200](img/Get%20Workspace%20200.png)
+
+- **Atualização de espaço existente** (`PUT /workspace/{id}`)
+
+![PutWorkspace200](img/Put%20Workspace%20200.png)
 
 ---
 
@@ -51,9 +72,26 @@ Foram realizados dois tipos de testes distintos:
 | Cenário                                  | Requisição                    | Resultado Esperado         |
 |------------------------------------------|--------------------------------|-----------------------------|
 | Criação de reserva válida                | `POST /reservations/create`    | 201 Created                 |
-| Criação de reserva em horário indisponível | `POST /reservations/create`   | 400 Bad Request             |
+| Criação de reserva com workspace inválida| `POST /reservations/create`    | 500 Workspace not Found     |
 | Consulta de reserva existente            | `GET /reservations/{id}`       | 200 OK                      |
 | Exclusão de reserva inexistente          | `DELETE /reservations/{id}`    | 404 Not Found               |
+
+#### Evidências:
+- **Criação de reserva válida** (`POST /reservations/create`)
+
+![CreateReservation200](img/Create%20Reservation%20200.png)
+
+- **Criação de reserva com workspace inválida** (`POST /reservations/create`)
+
+![PutReservation500](img/Put%20Reservation%20500.png)
+
+- **Consulta de reserva por ID existente** (`GET /reservations/{id}`)
+
+![GetReservation200](img/Get%20Reservation%20200.png)
+
+- **Exclusão de reserva inexistente** (`DELETE /reservations/{id}`)
+
+![DeleteReservation404](img/Delete%20Reservation%20404.png)
 
 ---
 
@@ -67,6 +105,11 @@ Foram realizados dois tipos de testes distintos:
 | `start_time/end_time`| Envio de datas em formato inválido        | 400 Bad Request         |
 | `status`            | Envio de valor inválido                    | 400 Bad Request         |
 
+#### Evidências:
+- **Validação de Dados (Campos Obrigatórios)**
+
+![CreateWorkspace500](img/Create%20Workspace%20500.png)
+
 ---
 
 ## 5. Teste de Carga
@@ -78,10 +121,22 @@ Foram realizados dois tipos de testes distintos:
 
 | Métrica               | Resultado Obtido    | Limite Aceitável    | Status |
 |------------------------|----------------------|---------------------|--------|
-| Latência Média         | 320 ms                | < 500 ms            | Sucesso |
+| Latência Média         | 11 ms                | < 30 ms            | Sucesso |
 | Taxa de Erros          | 0%                    | 0%                  | Sucesso |
 
-> **Ferramenta Utilizada:** Postman Collection Runner (100 requests paralelos)
+- 1000 requisições simultâneas aos endpoint `GET /workspaces` e `GET /reservations`.
+
+| Métrica               | Resultado Obtido    | Limite Aceitável    | Status |
+|------------------------|----------------------|---------------------|--------|
+| Latência Média         | 9 ms                  | < 30 ms            | Sucesso |
+| Taxa de Erros          | 0%                    | 0%                  | Sucesso |
+
+> **Ferramenta Utilizada:** Postman Collection Runner
+> 
+#### Evidências:
+- **Validação de Dados (Campos Obrigatórios)**
+
+![LoadTest](img/Load_Test.png)
 
 ---
 
