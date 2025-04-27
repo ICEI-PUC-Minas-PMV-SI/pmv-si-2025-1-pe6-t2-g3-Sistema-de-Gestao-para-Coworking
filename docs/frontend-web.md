@@ -1,25 +1,90 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+O front-end web desta aplicação tem como objetivo proporcionar uma interface moderna, intuitiva e responsiva para os usuários do sistema de gestão de coworking. A aplicação permite que usuários consultem espaços disponíveis, realizem reservas e gerenciem suas atividades de forma prática e segura.
+
+---
 
 ## Projeto da Interface Web
 
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+O projeto da interface web foi desenvolvido priorizando a simplicidade, a clareza das informações e a responsividade para dispositivos móveis.  
+
+- **Homepage/Landpage:**  
+  Apresenta informações institucionais, principais serviços oferecidos, diferenciais do espaço, unidades disponíveis e um formulário de agendamento de visitas.
+
+**Principais seções da Homepage:**
+- **Banner inicial** com chamada de ação.
+- **Serviços oferecidos** (salas de reunião, mesas privativas).
+- **Diferenciais** do coworking (internet de alta velocidade, sustentabilidade, auditório).
+- **Sobre nós** com a história e missão da empresa.
+- **Unidades disponíveis** com carrossel de imagens.
+- **Formulário de agendamento de visitas**.
+- **Seção de contato** com informações completas.
+
+![FrontHomePage](img/Home-Page.png)
+
+---
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+- **Topo da Página:**
+  - Logotipo e menu de navegação com links para seções.
+  - Botão destacado para "Agende sua Visita".
+
+- **Banner Principal:**
+  - Imagem institucional.
+  - Texto de chamada ("Descubra nossos novos locais!").
+
+- **Seções Intermediárias:**
+  - Apresentação dos serviços (cartões).
+  - Destaques de diferenciais (ícones e descrições).
+  - Sobre nós (texto e imagem).
+  - Nossas unidades (cartões).
+  - Agende sua visita (formulário para o cliente).
+
+- **Rodapé:**
+  - Informações de contato e dados institucionais.
+ 
+![WireframeHomePage](img/Landpage-Wireframe.png)
+
+---
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+O design visual segue uma linha clean e corporativa, com o objetivo de transmitir confiabilidade e modernidade.
+
+- **Paleta de Cores:**
+  - Laranja claro (#F7C59F) - Destaques e botões.
+  - Azul escuro (#1A2238) - Background de elementos.
+  - Branco (#FFFFFF) - Plano de fundo.
+  - Tons de cinza para textos secundários.
+
+- **Tipografia:**
+  - Principal: "Poppins" (Google Fonts).
+  - Títulos: "Poppins Bold", textos normais: "Poppins Regular".
+
+- **Ícones:**
+  - Utilização de ícones minimalistas relacionados a coworking, comunicação e serviços.
+
+- **Estilo:**
+  - Layout responsivo (adaptação a celulares e tablets).
+  - Botões com bordas arredondadas.
+  - Espaçamento adequado entre seções para melhorar a leitura.
+
+---
 
 ## Fluxo de Dados
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
+---
+
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+
+- **Linguagem Principal:** JavaScript (ES6+)
+- **Framework:** React.js
+- **Design das telas:** Figma
+
+---
 
 ## Considerações de Segurança
 
