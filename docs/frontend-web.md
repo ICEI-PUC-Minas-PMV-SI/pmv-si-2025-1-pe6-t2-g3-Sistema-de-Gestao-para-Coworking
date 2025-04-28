@@ -82,6 +82,17 @@ O projeto será dividido em 4 interfaces web:
 
 ![ManageReservation](img/Manage-Reservation.png)
 
+- **Pop-ups de Reservas:**
+  - Cartão de confirmação de cancelamento.
+  - Cartão para reagendamento.
+  - Cartão para lista de presença.
+    
+![popup1](img/popup-cancel.png)
+
+![popup1](img/popup-reschedule.png)
+
+![popup1](img/popup-list.png)
+
 ---
 
 ### Wireframes
