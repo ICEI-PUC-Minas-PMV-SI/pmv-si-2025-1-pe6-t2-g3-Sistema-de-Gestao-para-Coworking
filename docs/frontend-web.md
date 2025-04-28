@@ -12,6 +12,24 @@ O projeto será dividido em 4 interfaces web:
 - **Reserva:** permitir que os usuários autenticados possam reservar os espaços, podendo escolher as salas e os horários disponíveis para agendamento.
 - **Gerenciamento de Reservas:** permitir que os usuários autenticados possam visualizar, reagendar ou cancelar suas reservas existentes. 
 
+## Estrutura da Página de Login
+
+- **Background:**  
+  Imagem institucional de uma sala de reunião moderna e iluminada, proporcionando um visual harmônico e alinhado com o tema.
+
+- **Formulário de Login:**
+  - Logotipo da aplicação em destaque.
+  - Mensagem de boas-vindas orientando o login.
+  - Campo de entrada para usuário (e-mail).
+  - Campo de entrada para senha.
+  - Link para recuperação de senha.
+  - Botão de ação "Login".
+  - Link para cadastro de novos usuários.
+
+![LoginPage](img/Login-Page.png)
+
+---
+
 ## Estrutura da Página Inicial (Homepage)
 
 - **Header:**  
@@ -38,7 +56,7 @@ O projeto será dividido em 4 interfaces web:
 - **Footer:**  
   Contém informações de contato, endereços das unidades e um logotipo institucional.
 
-![FrontHomePage](img/Home-Page.png)
+![HomePage](img/Home-Page.png)
 
 ---
 
@@ -67,6 +85,20 @@ O projeto será dividido em 4 interfaces web:
 ---
 
 ### Wireframes
+
+**Login Wireframe:**
+
+- Logotipo no topo do formulário.
+- Texto de boas-vindas e instruções resumidas.
+- Campos para preenchimento de usuário e senha.
+- Opção para recuperação de senha ("Esqueci minha senha").
+- Botão principal de login destacado.
+- Link para novos usuários realizarem o cadastro.
+- Layout com formulário centralizado sobre um background claro.
+
+![WireframeLogin](img/Login-Wireframe.png)
+
+---
 
 **Homepage Wireframe:**
 
@@ -100,9 +132,9 @@ O projeto será dividido em 4 interfaces web:
 O design visual segue uma linha clean e corporativa, com o objetivo de transmitir confiabilidade e modernidade.
 
 - **Paleta de Cores:**
-  - Laranja claro (#F7C59F) - Destaques e botões.
+  - Laranja claro (#F58220) - Destaques e botões.
   - Bege (#ECD3A2) - Background geral.
-  - Azul escuro (#1A2238) - Background de elementos.
+  - Azul escuro (#18344D) - Background de elementos.
   - Branco (#FFFFFF) - Plano de fundo.
   - Tons de cinza para textos secundários.
 
