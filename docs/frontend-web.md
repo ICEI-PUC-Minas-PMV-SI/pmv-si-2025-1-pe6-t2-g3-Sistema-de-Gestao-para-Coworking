@@ -8,43 +8,86 @@ O front-end web desta aplicação tem como objetivo proporcionar uma interface m
 
 O projeto da interface web foi desenvolvido priorizando a simplicidade, a clareza das informações e a responsividade para dispositivos móveis.  
 
-- **Homepage/Landpage:**  
-  Apresenta informações institucionais, principais serviços oferecidos, diferenciais do espaço, unidades disponíveis e um formulário de agendamento de visitas.
+## Estrutura da Página Principal (Homepage)
 
-**Principais seções da Homepage:**
-- **Banner inicial** com chamada de ação.
-- **Serviços oferecidos** (salas de reunião, mesas privativas).
-- **Diferenciais** do coworking (internet de alta velocidade, sustentabilidade, auditório).
-- **Sobre nós** com a história e missão da empresa.
-- **Unidades disponíveis** com carrossel de imagens.
-- **Formulário de agendamento de visitas**.
-- **Seção de contato** com informações completas.
+- **Header:**  
+  Contém o logotipo, o menu de navegação com acesso às seções "Home", "Unidades", "Serviços", "Sobre nós", além dos botões de ação "Agende sua Visita" e "Entrar".
+
+- **Banner Principal:**  
+  Imagem de destaque de ambiente de coworking, acompanhada de uma chamada de ação promovendo a descoberta dos novos locais.
+
+- **Serviços Prestados:**  
+  Apresentação visual dos principais serviços (Sala de Reunião, Mesa Privativa) com ícones ilustrativos e descrições breves.
+
+- **Diferenciais:**  
+  Seção destacando atributos como "Studio Lab", "Sustentabilidade", "Fibra Óptica" e "Auditório Lab", cada um com ícones e texto resumido.
+
+- **Sobre Nós:**  
+  Texto descritivo sobre a missão e a visão da empresa, acompanhado de uma imagem ilustrativa do ambiente.
+
+- **Unidades Disponíveis:**  
+  Apresentação das unidades do coworking, utilizando imagens e descrições breves em formato de carrossel.
+
+- **Formulário de Agendamento:**  
+  Formulário para que o usuário possa agendar sua visita, preenchendo nome, e-mail, unidade de interesse, empresa e mensagem.
+
+- **Footer:**  
+  Contém informações de contato, endereços das unidades e um logotipo institucional.
 
 ![FrontHomePage](img/Home-Page.png)
 
 ---
 
+## Estrutura da tela de Gerenciamento de Reserva
+
+- **Header:**  
+  Logotipo, menu de navegação principal, botão de ação "Agende sua Visita" e um ícone de perfil de usuário, que exibe um menu suspenso com opções como "Meu Perfil", "Minhas Reservas", "Reservar" e "Sair".
+
+- **Lista de Reservas:**
+  - Cada reserva é exibida como um cartão.
+  - Em cada cartão consta:
+    - Imagem do espaço reservado.
+    - Nome da sala de reunião.
+    - Unidade de localização.
+    - Horário agendado.
+    - Três botões de ação:
+      - **Reagendar**
+      - **Lista de Presença**
+      - **Cancelar Reserva**
+        
+- **Footer:**  
+  Contém informações de contato, endereços das unidades e um logotipo institucional.
+
+![ManageReservation](img/Manage-Reservation.png)
+
+---
+
 ### Wireframes
 
-- **Topo da Página:**
-  - Logotipo e menu de navegação com links para seções.
-  - Botão destacado para "Agende sua Visita".
+**Homepage Wireframe:**
 
-- **Banner Principal:**
-  - Imagem institucional.
-  - Texto de chamada ("Descubra nossos novos locais!").
+- **Header:** Barra superior contendo navegação e botões de acesso.
+- **Banner:** Área de destaque visual com imagem e chamada de ação.
+- **Seções de Conteúdo:**
+  - Cartões de serviços com imagens e descrições.
+  - Diferenciais com ícones e texto explicativo.
+  - Texto institucional "Sobre nós" e imagem ilustrativa.
+  - Listagem de unidades com imagens organizadas lado a lado.
+- **Formulário de Contato:** Campos de preenchimento para o agendamento de visitas.
+- **Footer:** Rodapé com contatos e informações institucionais.
 
-- **Seções Intermediárias:**
-  - Apresentação dos serviços (cartões).
-  - Destaques de diferenciais (ícones e descrições).
-  - Sobre nós (texto e imagem).
-  - Nossas unidades (cartões).
-  - Agende sua visita (formulário para o cliente).
-
-- **Rodapé:**
-  - Informações de contato e dados institucionais.
- 
 ![WireframeHomePage](img/Landpage-Wireframe.png)
+
+---
+
+**Manage Reservation Wireframe:**
+
+- **Header:** Barra superior contendo navegação e botões de acesso. Com opções de login e perfil de usuário.
+- **Cartões de Reserva:** Imagem da sala + informações principais (nome da sala, unidade, data e hora).
+- **Botões de ação:** Para reagendamento, ver lista de presença e cancelamento.
+- **Footer:** Rodapé com contatos e informações institucionais.
+
+![WireframeManage](img/Manage-Reservation-Wireframe.png)
 
 ---
 
@@ -54,6 +97,7 @@ O design visual segue uma linha clean e corporativa, com o objetivo de transmiti
 
 - **Paleta de Cores:**
   - Laranja claro (#F7C59F) - Destaques e botões.
+  - Bege (#ECD3A2) - Background geral.
   - Azul escuro (#1A2238) - Background de elementos.
   - Branco (#FFFFFF) - Plano de fundo.
   - Tons de cinza para textos secundários.
@@ -65,10 +109,10 @@ O design visual segue uma linha clean e corporativa, com o objetivo de transmiti
 - **Ícones:**
   - Utilização de ícones minimalistas relacionados a coworking, comunicação e serviços.
 
-- **Estilo:**
-  - Layout responsivo (adaptação a celulares e tablets).
-  - Botões com bordas arredondadas.
-  - Espaçamento adequado entre seções para melhorar a leitura.
+- **Estilo de Layout:**
+  - Estrutura em colunas verticais, com espaçamento generoso entre os elementos.
+  - Botões grandes para facilitar a interação em dispositivos móveis.
+  - Ícone de perfil com menu suspenso para facilitar a navegação entre funcionalidades.
 
 ---
 
