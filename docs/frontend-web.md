@@ -1,14 +1,18 @@
 # Front-end Web
 
-O front-end web desta aplicação tem como objetivo proporcionar uma interface moderna, intuitiva e responsiva para os usuários do sistema de gestão de coworking. A aplicação permite que usuários consultem espaços disponíveis, realizem reservas e gerenciem suas atividades de forma prática e segura.
+O front-end desta aplicação tem como objetivo proporcionar uma interface moderna, intuitiva e responsiva para os usuários do sistema de gestão de coworking. A aplicação permite que usuários consultem espaços disponíveis, realizem reservas e gerenciem suas atividades de forma prática e segura.
 
 ---
 
 ## Projeto da Interface Web
 
-O projeto da interface web foi desenvolvido priorizando a simplicidade, a clareza das informações e a responsividade para dispositivos móveis.  
+O projeto será dividido em 4 interfaces web:
+- **Login:** interface de login dos usuários, com possibilidade de cadastro no sistema.
+- **Página Inicial:** homepage do sistema, composta por elementos institucionais e comerciais, organizados de maneira a garantir uma estrutura chamativa e moderna para os clientes e possíveis clientes.
+- **Reserva:** permitir que os usuários autenticados possam reservar os espaços, podendo escolher as salas e os horários disponíveis para agendamento.
+- **Gerenciamento de Reservas:** permitir que os usuários autenticados possam visualizar, reagendar ou cancelar suas reservas existentes. 
 
-## Estrutura da Página Principal (Homepage)
+## Estrutura da Página Inicial (Homepage)
 
 - **Header:**  
   Contém o logotipo, o menu de navegação com acesso às seções "Home", "Unidades", "Serviços", "Sobre nós", além dos botões de ação "Agende sua Visita" e "Entrar".
@@ -38,7 +42,7 @@ O projeto da interface web foi desenvolvido priorizando a simplicidade, a clarez
 
 ---
 
-## Estrutura da tela de Gerenciamento de Reserva
+## Estrutura da tela de Gerenciamento de Reservas
 
 - **Header:**  
   Logotipo, menu de navegação principal, botão de ação "Agende sua Visita" e um ícone de perfil de usuário, que exibe um menu suspenso com opções como "Meu Perfil", "Minhas Reservas", "Reservar" e "Sair".
