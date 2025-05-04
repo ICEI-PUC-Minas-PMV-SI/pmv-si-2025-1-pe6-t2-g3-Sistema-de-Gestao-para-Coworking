@@ -80,7 +80,7 @@ O projeto será dividido em 4 interfaces web:
 - **Footer:**  
   Contém informações de contato, endereços das unidades e um logotipo institucional.
 
-![ManageReservation](img/Manage-Reservation.png)
+![ManageReservation](img/Manage-Reservation-Page.png)
 
 - **Pop-ups de Reservas:**
   - Cartão de confirmação de cancelamento.
@@ -88,10 +88,6 @@ O projeto será dividido em 4 interfaces web:
   - Cartão para lista de presença.
     
 ![popup1](img/popup-cancel.png)
-
-![popup1](img/popup-reschedule.png)
-
-![popup1](img/popup-list.png)
 
 ---
 
@@ -123,7 +119,7 @@ O projeto será dividido em 4 interfaces web:
 - **Formulário de Contato:** Campos de preenchimento para o agendamento de visitas.
 - **Footer:** Rodapé com contatos e informações institucionais.
 
-![WireframeHomePage](img/Landpage-Wireframe.png)
+![WireframeHomePage](img/Home-Wireframe.png)
 
 ---
 
