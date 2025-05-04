@@ -33,7 +33,7 @@ O projeto será dividido em 4 interfaces web:
 ## Estrutura da Página Inicial (Homepage)
 
 - **Header:**  
-  Contém o logotipo, o menu de navegação com acesso às seções "Home", "Unidades", "Serviços", "Sobre nós", além dos botões de ação "Agende sua Visita" e "Entrar".
+  Contém o logotipo, o menu de navegação com acesso às seções "Nosso Espaço", "Serviços", "Sobre nós", além dos botões de ação "Agende sua Visita" e "Entrar".
 
 - **Banner Principal:**  
   Imagem de destaque de ambiente de coworking, acompanhada de uma chamada de ação promovendo a descoberta dos novos locais.
@@ -47,14 +47,11 @@ O projeto será dividido em 4 interfaces web:
 - **Sobre Nós:**  
   Texto descritivo sobre a missão e a visão da empresa, acompanhado de uma imagem ilustrativa do ambiente.
 
-- **Unidades Disponíveis:**  
-  Apresentação das unidades do coworking, utilizando imagens e descrições breves em formato de carrossel.
-
-- **Formulário de Agendamento:**  
-  Formulário para que o usuário possa agendar sua visita, preenchendo nome, e-mail, unidade de interesse, empresa e mensagem.
+- **Nosso Espaço:**  
+  Apresentação do espaço do coworking, utilizando imagens e descrições breves em formato de carrossel.
 
 - **Footer:**  
-  Contém informações de contato, endereços das unidades e um logotipo institucional.
+  Contém informações de contato, endereços e um logotipo institucional.
 
 ![HomePage](img/Home-Page.png)
 
@@ -63,7 +60,7 @@ O projeto será dividido em 4 interfaces web:
 ## Estrutura da tela de Gerenciamento de Reservas
 
 - **Header:**  
-  Logotipo, menu de navegação principal, botão de ação "Agende sua Visita" e um ícone de perfil de usuário, que exibe um menu suspenso com opções como "Meu Perfil", "Minhas Reservas", "Reservar" e "Sair".
+  Logotipo, menu de navegação principal, botão de ação "Agende sua Visita" e um ícone de perfil de usuário, que exibe um menu suspenso com opções como "Minhas Reservas", "Reservar" e "Sair".
 
 - **Lista de Reservas:**
   - Cada reserva é exibida como um cartão.
@@ -74,7 +71,6 @@ O projeto será dividido em 4 interfaces web:
     - Horário agendado.
     - Três botões de ação:
       - **Reagendar**
-      - **Lista de Presença**
       - **Cancelar Reserva**
         
 - **Footer:**  
@@ -84,8 +80,7 @@ O projeto será dividido em 4 interfaces web:
 
 - **Pop-ups de Reservas:**
   - Cartão de confirmação de cancelamento.
-  - Cartão para reagendamento.
-  - Cartão para lista de presença.
+  - Modal para reagendamento.
     
 ![popup1](img/popup-cancel.png)
 
@@ -115,8 +110,7 @@ O projeto será dividido em 4 interfaces web:
   - Cartões de serviços com imagens e descrições.
   - Diferenciais com ícones e texto explicativo.
   - Texto institucional "Sobre nós" e imagem ilustrativa.
-  - Listagem de unidades com imagens organizadas lado a lado.
-- **Formulário de Contato:** Campos de preenchimento para o agendamento de visitas.
+  - Listagem dos espaços com imagens organizadas lado a lado.
 - **Footer:** Rodapé com contatos e informações institucionais.
 
 ![WireframeHomePage](img/Home-Wireframe.png)
@@ -125,7 +119,7 @@ O projeto será dividido em 4 interfaces web:
 
 **Manage Reservation Wireframe:**
 
-- **Header:** Barra superior contendo navegação e botões de acesso. Com opções de login e perfil de usuário.
+- **Header:** Barra superior contendo navegação e botões de acesso. Com opções de login, reservas e gerenciamento de reservas.
 - **Cartões de Reserva:** Imagem da sala + informações principais (nome da sala, unidade, data e hora).
 - **Botões de ação:** Para reagendamento, ver lista de presença e cancelamento.
 - **Footer:** Rodapé com contatos e informações institucionais.
