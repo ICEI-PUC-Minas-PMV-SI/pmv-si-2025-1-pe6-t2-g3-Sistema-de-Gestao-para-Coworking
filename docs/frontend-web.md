@@ -155,7 +155,17 @@ O design visual segue uma linha clean e corporativa, com o objetivo de transmiti
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+- **Legenda dos fluxos:**
+  
+![userflowlegenda](img/Userflow-Legenda.png)
+
+- **Fluxo de login:**
+  
+![userflowlogin](img/Userflow-Login.png)
+
+- **Flluxo principal:**
+  
+![userflowflow](img/Userflow-Flow.png)
 
 ---
 
@@ -163,7 +173,7 @@ O design visual segue uma linha clean e corporativa, com o objetivo de transmiti
 
 - **Linguagem Principal:** JavaScript (ES6+)
 - **Framework:** React.js
-- **Design das telas:** Figma
+- **Design:** Figma
 
 ---
 
