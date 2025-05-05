@@ -57,6 +57,12 @@ O projeto será dividido em 4 interfaces web:
 
 ---
 
+## Estrutura da tela de Reservas
+
+![CreateReservation](img/Create-Reservation-Page.png)
+
+---
+
 ## Estrutura da tela de Gerenciamento de Reservas
 
 - **Header:**  
@@ -114,6 +120,12 @@ O projeto será dividido em 4 interfaces web:
 - **Footer:** Rodapé com contatos e informações institucionais.
 
 ![WireframeHomePage](img/Home-Wireframe.png)
+
+---
+
+**Create Reservation Wireframe:**
+
+![WireframeCreate](img/Create-Reservation-Wireframe.png)
 
 ---
 
