@@ -98,6 +98,7 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 | Item                       | Descrição                                      |
 |----------------------------|-----------------------------------------------|
 | Tela                      | Gerenciamento de reservas                      |
+| Funcionalidade Testada    | Realizar o reagendamento da reserva           |
 | Requisito Relacionado     | [RF03] Permitir que o usuário edite ou cancele suas reservas antes do horário agendado |
 | Resultado Esperado        | Pop up de sucesso e redirecionamento para a tela de gerenciamento reservas |
 | Resultado Obtido          | Sucesso                                        |
@@ -130,6 +131,7 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 | Item                       | Descrição                                      |
 |----------------------------|-----------------------------------------------|
 | Tela                      | Gerenciamento de reservas                      |
+| Funcionalidade Testada    | Realizar o cancelamento da reserva           |
 | Requisito Relacionado     | [RF03] Permitir que o usuário edite ou cancele suas reservas antes do horário agendado |
 | Resultado Esperado        | Pop up de sucesso e redirecionamento para a tela de reserva vazia |
 | Resultado Obtido          | Sucesso                                        |
@@ -162,7 +164,7 @@ Para cada funcionalidade testada, foram coletadas evidências em três momentos:
 |------------------------|-------------------------------------------|
 | Interface              | Print da ação ou estado na tela          |
 | Integração             | Print do Swagger com a requisição        |
-| Persistência           | Print do banco com o dado de dados       |
+| Persistência           | Print do banco de dados                  |
 
 ---
 
@@ -183,5 +185,5 @@ Foi realizada uma simulação manual de múltiplas interações rápidas com o f
 ## 6. Considerações Finais
 
 Todos os testes manuais realizados foram satisfatórios para as funcionalidades desenvolvidas até o momento.  
-A integração entre frontend, backend (API REST) e banco de dados foram evidênciados.  
+A integração entre frontend, backend e banco de dados foram evidenciados.  
 Os fluxos principais (login, reserva, gerenciamento) apresentaram comportamento estável e coerente com os requisitos do projeto.
