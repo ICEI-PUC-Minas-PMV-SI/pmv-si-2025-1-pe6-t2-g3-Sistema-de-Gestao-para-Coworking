@@ -67,7 +67,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | ------ | ----------------------------------------------------------------------------- | ---------- |
 | RF-001 | Permitir que o usuário se registre e faça login no site                       | ALTA       |
 | RF-002 | Permitir que o usuário consiga agendar, visualizar e cancelar as reservas     | ALTA       |
-| RF-003 | Permitir que o usuário receba notificações sobre suas reservas (email e push) | MÉDIA      |
 | RF-004 | Permitir que o usuário edite suas reservas antes do horário agendado          | MÉDIA      |
 | RF-005 | Permitir que administradores possam cadastrar e gerenciar salas disponíveis   | ALTA       |
 
