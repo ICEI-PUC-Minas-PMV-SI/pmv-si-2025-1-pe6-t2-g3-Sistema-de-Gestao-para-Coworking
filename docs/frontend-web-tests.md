@@ -18,7 +18,6 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 | Testes de Integração      | Verificar se as interações entre frontend e backend estão corretas       |
 | Testes de Navegação       | Confirmar que os fluxos de tela estão acessíveis e coerentes             |
 | Testes de Validação       | Conferir tratamento de campos obrigatórios e mensagens de erro           |
-| Testes de Carga (manual)  | Verificar o comportamento da interface sob múltiplas interações rápidas |
 
 ---
 
@@ -156,33 +155,13 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
 ---
 
-## 4. Estrutura de Evidências
+## 4. Cenários de Testes de Validação de Dados
 
-Para cada funcionalidade testada, foram coletadas evidências em três momentos:
-
-| Etapa Validada        | Evidência                                |
-|------------------------|-------------------------------------------|
-| Interface              | Print da ação ou estado na tela          |
-| Integração             | Print do Swagger com a requisição        |
-| Persistência           | Print do banco de dados                  |
+Preencher aqui Guilherme
 
 ---
 
-## 5. Teste de Carga (Manual)
-
-Foi realizada uma simulação manual de múltiplas interações rápidas com o frontend, acessando telas, preenchendo formulários e navegando entre componentes, com foco em:
-
-- Verificar travamentos ou falhas de renderização
-- Garantir que componentes são reativos
-- Validar se chamadas à API se mantêm estáveis sob uso contínuo
-
-**Observações:**
-- A aplicação manteve o desempenho estável durante uso intenso local.
-- Recomendado futuramente utilizar ferramentas como Lighthouse ou k6 para testes automatizados.
-
----
-
-## 6. Considerações Finais
+## 5. Considerações Finais
 
 Todos os testes manuais realizados foram satisfatórios para as funcionalidades desenvolvidas até o momento.  
 A integração entre frontend, backend e banco de dados foram evidenciados.  
