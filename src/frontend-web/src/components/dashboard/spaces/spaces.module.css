@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    background-color: var(--color-bg);
+}
+
+.textBox {
+    position: absolute;
+    background-color: var(--color-primary);
+    color: #fff;
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    top: 45vh;
+    left: 15vh;
+}
+
+.textBox span {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+  
+.textBox button {
+    margin-top: 16px;
+}

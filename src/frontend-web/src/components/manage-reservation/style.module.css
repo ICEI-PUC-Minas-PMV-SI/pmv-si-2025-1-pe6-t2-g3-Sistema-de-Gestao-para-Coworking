@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-bg);
+    flex-wrap: wrap;
+    padding: 15vh;
+    gap: 10rem;
+}
+
+.pageTitle {
+    position: absolute;
+    top: 15vh;
+}
+
+.card {
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: calc(60% - 50px);
+    display: flex;
+    gap: 85px;
+    text-align: center;
+}
+
+.reservationInfos {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.workspaceInfo {
+    position: relative;
+    top: 5vh;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20vh;
+    gap: 25px;
+}
+
+.buttonGroup button {
+    height: 70px;
+}
+
+.date {
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.reservedDate {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.date label {
+    font-size: 14px;
+    color: #cecece;
+    word-break: break-all;
+}
+
+.location, .capacity {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.location span {
+    width: 80%;
+    white-space: normal;
+    overflow-wrap: break-word; 
+    text-align: start;
+}
+
+.notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-bg);
+    flex-wrap: wrap;
+    padding: 15vh;
+    gap: 5rem;
+    text-align: center;
+}
+
+.notFoundButton {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

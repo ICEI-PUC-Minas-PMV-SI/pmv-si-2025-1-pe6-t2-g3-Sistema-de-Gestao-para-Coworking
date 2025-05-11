@@ -1,0 +1,23 @@
+.swiper {
+    width: 80%;
+    z-index: 0;
+}
+
+.image {
+    position: relative;
+    margin: auto 0;
+    top: 40px;
+}
+
+:global(.swiper-pagination-bullet) {
+    background: #F58220;
+}
+
+:global(.swiper-pagination-bullet-active) {
+    background: #F58220;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: #ff6600;
+}

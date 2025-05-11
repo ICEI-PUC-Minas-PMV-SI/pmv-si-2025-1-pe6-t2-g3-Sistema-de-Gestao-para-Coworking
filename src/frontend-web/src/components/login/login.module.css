@@ -1,0 +1,81 @@
+.loginContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/backgroundLogin.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.loginBox {
+  background: white;
+  padding: 0 30px 10px 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginLogo {
+  margin: 20px 0;
+  display: block;
+  max-width: 180px;
+  height: auto;
+}
+
+.loginBox span{
+  font-size: 16px;
+  margin-bottom: 6px;
+  display: block;
+  line-height: 100%;
+}
+
+.loginHeader{
+  margin-bottom: 20px;
+}
+
+.error{
+  position: relative;
+  color: red;
+  text-align: right;
+  top: -10px;
+}
+
+.loginBox form{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button {
+  width: 100%;
+}
+
+.forgotPassword {
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.forgotPassword a{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.48);
+  text-decoration: none;
+}
+
+.registerLink {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.registerLink a {
+  cursor: pointer;
+  font-weight: bold;
+  color: #FF7A00;
+  text-decoration: none;
+}
+
