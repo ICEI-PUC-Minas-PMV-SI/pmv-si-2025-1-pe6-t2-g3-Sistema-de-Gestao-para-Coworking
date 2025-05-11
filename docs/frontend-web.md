@@ -7,7 +7,7 @@ O front-end desta aplicação tem como objetivo proporcionar uma interface moder
 ## Projeto da Interface Web
 
 O projeto será dividido em 4 interfaces web:
-- **Login:** interface de login dos usuários, com possibilidade de cadastro no sistema.
+- **Login e Register:** interface de login dos usuários, com possibilidade de cadastro no sistema.
 - **Página Inicial:** homepage do sistema, composta por elementos institucionais e comerciais, organizados de maneira a garantir uma estrutura chamativa e moderna para os clientes e possíveis clientes.
 - **Reserva:** permitir que os usuários autenticados possam reservar os espaços, podendo escolher as salas e os horários disponíveis para agendamento.
 - **Gerenciamento de Reservas:** permitir que os usuários autenticados possam visualizar, reagendar ou cancelar suas reservas existentes. 
@@ -27,6 +27,24 @@ O projeto será dividido em 4 interfaces web:
   - Link para cadastro de novos usuários.
 
 ![LoginPage](img/Login-Page.png)
+
+---
+
+## Estrutura da Página de Cadastro
+
+- **Background:**  
+  Imagem institucional de uma sala de reunião moderna e iluminada, proporcionando um visual harmônico e alinhado com o tema.
+
+- **Formulário de Login:**
+  - Logotipo da aplicação em destaque.
+  - Mensagem de boas-vindas incentivando o preenchimento do formulário.
+  - Campo de entrada para Nome Completo.
+  - Campo de entrada para Email (credencial de login).
+  - Campo de entrada para Senha (campo do tipo password).
+  - Botão de ação com destaque visual: Registrar.
+  - Link inferior com texto: “Já é cliente? Faça login aqui”, redirecionando para a tela de login.
+
+![RegisterPage](img/Register-Page.png)
 
 ---
 
@@ -59,6 +77,22 @@ O projeto será dividido em 4 interfaces web:
 
 ## Estrutura da tela de Reservas
 
+- **Header:**  
+  Logotipo, menu de navegação principal, botão de ação "Agende sua Visita" e um ícone de perfil de usuário, que exibe um menu suspenso com opções como "Minhas Reservas", "Reservar" e "Sair".
+
+- **Catálogo de Espaços Disponíveis:**
+  - Os espaços disponíveis para reserva são exibidos em forma de cartões organizados em grade.
+  - Cada cartão contém:
+    - Imagem ilustrativa de cada sala.
+    - Nome do espaço (ex: "Sala Privativa").
+    - Identificação da unidade (ex: "Bloco 1 / Sala 3000").
+    - Capacidade do espaço.
+    - Campo para seleção da data da reserva.
+    - Botão de ação **"Reservar"** para enviar a solicitação.
+        
+- **Footer:**  
+  Contém informações de contato, endereços das unidades e um logotipo institucional.
+
 ![CreateReservation](img/Create-Reservation-Page.png)
 
 ---
@@ -89,6 +123,7 @@ O projeto será dividido em 4 interfaces web:
   - Modal para reagendamento.
     
 ![popup1](img/popup-cancel.png)
+![popup2](img/Manage_front_form.png)
 
 ---
 
@@ -102,9 +137,23 @@ O projeto será dividido em 4 interfaces web:
 - Opção para recuperação de senha ("Esqueci minha senha").
 - Botão principal de login destacado.
 - Link para novos usuários realizarem o cadastro.
-- Layout com formulário centralizado sobre um background claro.
 
 ![WireframeLogin](img/Login-Wireframe.png)
+
+---
+
+**Register Wireframe:**
+
+- Logotipo no topo do formulário.
+- Texto de boas-vindas com instrução direta para cadastro.
+- Campos para preenchimento de:
+    - Nome Completo
+    - Email
+    - Senha 
+- Botão principal de registro.
+- Link para usuários já cadastrados irem para a tela de login.
+
+![WireframeRegister](img/Register-Wireframe.png)
 
 ---
 
@@ -191,8 +240,32 @@ O design visual segue uma linha clean e corporativa, com o objetivo de transmiti
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+A segurança da aplicação front-end visa proteger os dados do usuário, garantir a integridade da autenticação e evitar vulnerabilidades comuns em aplicações web.
 
+### Autenticação com JWT
+
+A autenticação é realizada por meio de tokens JWT gerados pelo backend no login. O token é armazenado em memória (evitando localStorage) e enviado nas requisições via header:
+
+`Authorization: Bearer <token>`
+
+O token possui tempo de expiração e é utilizado para acesso a rotas protegidas da aplicação.
+
+### Controle de Acesso
+
+A interface controla a visibilidade de elementos com base no perfil do usuário autenticado (admin ou customer). Rotas sensíveis redirecionam para login caso não haja autenticação válida.
+
+### Validação de Dados
+
+Formulários realizam validação local dos campos obrigatórios, formatos e regras de negócio, reduzindo falhas de envio e protegendo a aplicação contra dados inconsistentes.
+
+### Prevenção de Vulnerabilidades
+
+A aplicação evita inserção direta de conteúdo HTML no DOM e não utiliza `dangerouslySetInnerHTML`, prevenindo XSS. A autenticação via token mitiga riscos de CSRF.
+
+### Comunicação Segura
+
+Todas as requisições são feitas sobre HTTPS, assegurando criptografia dos dados trocados entre o front-end e a API.
+  
 ## Implantação
 
 [Instruções para implantar a aplicação distribuída em um ambiente de produção.]
@@ -205,13 +278,7 @@ O design visual segue uma linha clean e corporativa, com o objetivo de transmiti
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
-
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+[Frontend Testes](/docs/frontend-web-tests.md) <br> 
 
 # Referências
 
