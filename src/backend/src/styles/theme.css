@@ -1,0 +1,8 @@
+:root {
+  --color-primary: #18344D;
+  --color-secondary: #F5820F;
+  --color-bg: #ECD3A2;
+  --color-text: #000;
+  --font-base: 'Poppins', sans-serif;
+  --spacing-md: 1rem;
+}

@@ -1,0 +1,144 @@
+.nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 100px;
+  background-color: #F7F3EA;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  color: var(--color-primary);
+  position: relative;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.navItens {
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+  gap: 75px;
+  transition: all 0.3s ease;
+}
+
+.navItens a {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.navItens a:hover {
+  color: var(--color-secondary);
+  transition: all 0.3s ease;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  gap: 5px;
+}
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  }
+
+@media (max-width: 768px) {
+  .navItens {
+    display: none;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    padding: 1rem 0;
+    z-index: 10;
+    border-top: 1px solid #eee;
+  }
+
+  .buttonGroup {
+      display: none;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      background: #fff;
+      padding: 1rem 0;
+      z-index: 10;
+      border-top: 1px solid #eee;
+  }
+
+  .navItens.show, .buttonGroup.show {
+    display: flex;
+  }
+
+  .nav h1 {
+    font-size: 30px;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+}
+
+.profileMenu {
+  position: relative;
+}
+
+.profileIcon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1000;
+  min-width: 200px;
+  text-align: center;
+}
+
+.dropdown a {
+  cursor: pointer;
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}

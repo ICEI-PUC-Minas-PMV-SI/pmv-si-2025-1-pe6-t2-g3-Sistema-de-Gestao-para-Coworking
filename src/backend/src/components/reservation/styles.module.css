@@ -1,0 +1,80 @@
+.container {
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15vh;
+    gap: 10rem;
+}
+
+.pageTitle {
+    position: absolute;
+    top: 15vh;
+}
+
+.card {
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: calc(50% - 30px);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.workspaceInfos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location, .capacity {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.location span {
+    width: 80%;
+    white-space: normal;
+    overflow-wrap: break-word; 
+    text-align: start;
+}
+
+.actionGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.actionGroup label {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    position: relative;
+    left: 25px;
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}

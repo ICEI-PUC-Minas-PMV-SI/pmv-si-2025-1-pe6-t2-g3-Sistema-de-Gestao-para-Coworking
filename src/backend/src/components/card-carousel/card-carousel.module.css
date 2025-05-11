@@ -1,0 +1,36 @@
+.swiper {
+    width: 70%;
+    height: 77%;
+    z-index: 0;
+    top: 20vh;
+}
+
+.swiperSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 52vh;
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+  
+.imageContainer {
+    position: relative;
+}
+  
+.content {
+    padding: 10px;
+}

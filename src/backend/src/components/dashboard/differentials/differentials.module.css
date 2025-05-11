@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color-bg);
+}
+
+.screenAbout {
+    position: absolute;
+    margin-top: 30px;
+    width: 55%;
+    text-align: center;
+}
+
+.screenAbout span {
+    display: block;
+    margin-top: 8px;
+    color: #666666;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20vh;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 25vh;
+}
+
+.rowItem {
+    width: 50vh;
+    text-align: center;
+}
+
+.rowItem span {
+    color: #666666;
+}
+
+.line {
+    position: block;
+    display: flex;
+    align-self: center;
+    margin: 30px 30px;
+    width: 115%;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #C9A661;
+}

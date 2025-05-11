@@ -1,0 +1,64 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.modal {
+    background: var(--color-primary);
+    border-radius: 8px;
+    padding: 4rem;
+    min-height: 650px;
+    min-width: 420px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    color: #fff;
+}
+
+.contentInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 10vh;
+    gap: 10px;
+}
+
+.actionGroup {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 17vh;
+    text-align: start;
+}
+
+.actionGroup button {
+    position: relative;
+    top: 35px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+}
