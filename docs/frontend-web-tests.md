@@ -31,7 +31,7 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 | Tela                      | Login                                          |
 | Funcionalidade Testada    | Registro e autenticação de usuário com dados válidos |
 | Requisito Relacionado     | [RF01] Permitir que o usuário se registre e faça login no site |
-| Resultado Esperado        | Redirecionamento para a tela principal         |
+| Resultado Esperado        | Pop up de sucesso e redirecionamento para a tela principal |
 | Resultado Obtido          | Sucesso                                        |
 | Observações               | Token JWT gerado e armazenado no navegador     |
 
@@ -41,7 +41,6 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
   ![register-form](img/Register_front_ok.png)
   
-
 - **2. Login do usuário:**
 
   ![login-form](img/Login_front_ok.png)
@@ -57,6 +56,101 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 - **5. Evidência Banco de Dados:**
 
   ![login-database](img/Login_bd_ok.png)
+
+---
+
+### 3.2. Reservar sala e gerenciar reservas
+
+| Item                       | Descrição                                      |
+|----------------------------|-----------------------------------------------|
+| Tela                      | Agendar reserva e gerenciamento de reservas    |
+| Funcionalidade Testada    | Realizar o agendamento e gerenciar as reservas |
+| Requisito Relacionado     | [RF02] Permitir que o usuário consiga agendar e gerenciar suas reservas |
+| Resultado Esperado        | Pop up de sucesso e redirecionamento           |
+| Resultado Obtido          | Sucesso                                        |
+
+#### Evidências
+
+- **1. Reservar:**
+
+  ![reservation-form](img/Reservation_front_form.png)
+  
+- **2. Gerenciar reserva:**
+
+  ![reservation-management](img/Reservation_manage.png)
+
+- **3. Pop up reserva bem sucedida:**
+
+  ![reservation-popup](img/Reservation_pop_up.png)
+
+- **4. Evidência Swagger Backend:**
+
+  ![reservation-swagger](img/Reservation_swagger_ok.png)
+  
+- **5. Evidência Banco de Dados:**
+
+  ![reservation-database](img/Reservation_bd_ok.png)
+
+---
+
+### 3.3. Reagendamento de reserva
+
+| Item                       | Descrição                                      |
+|----------------------------|-----------------------------------------------|
+| Tela                      | Gerenciamento de reservas                      |
+| Requisito Relacionado     | [RF03] Permitir que o usuário edite ou cancele suas reservas antes do horário agendado |
+| Resultado Esperado        | Pop up de sucesso e redirecionamento para a tela de gerenciamento reservas |
+| Resultado Obtido          | Sucesso                                        |
+
+#### Evidências
+
+- **1. Reagendar:**
+
+  ![manage-form](img/Manage_front_form.png)
+
+- **2. Reangedado:**
+
+  ![manage-ok](img/Manage_front_ok.png)
+
+- **3. Pop up reagendamento bem sucedido:**
+
+  ![manage-popup](img/Manage_front_pop_up.png)
+
+- **4. Evidência Swagger Backend:**
+
+  ![manage-swagger](img/Manage_swagger_ok.png)
+  
+- **5. Evidência Banco de Dados:**
+
+  ![manage-database](img/Manage_bd_ok.png)
+
+---
+### 3.4. Cancelamento de reserva
+
+| Item                       | Descrição                                      |
+|----------------------------|-----------------------------------------------|
+| Tela                      | Gerenciamento de reservas                      |
+| Requisito Relacionado     | [RF03] Permitir que o usuário edite ou cancele suas reservas antes do horário agendado |
+| Resultado Esperado        | Pop up de sucesso e redirecionamento para a tela de reserva vazia |
+| Resultado Obtido          | Sucesso                                        |
+
+#### Evidências
+
+- **1. Cancelar:**
+
+  ![cancel-form](img/Cancel_front_form.png)
+
+- **2. Pop up cancelamento bem sucedido:**
+
+  ![cancel-popup](img/Cancel_front_pop_up.png)
+
+- **3. Evidência Swagger Backend:**
+
+  ![cancel-swagger](img/Cancel_swagger_ok.png)
+  
+- **4. Evidência Banco de Dados:**
+
+  ![cancel-database](img/Cancel_bd_ok.png)
 
 ---
 
