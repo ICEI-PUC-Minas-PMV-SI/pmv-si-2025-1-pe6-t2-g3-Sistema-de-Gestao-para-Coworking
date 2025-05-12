@@ -1,6 +1,6 @@
-# Front-end Web
+# Frontend Web
 
-O front-end desta aplicação tem como objetivo proporcionar uma interface moderna, intuitiva e responsiva para os usuários do sistema de gestão de coworking. A aplicação permite que usuários consultem espaços disponíveis, realizem reservas e gerenciem suas atividades de forma prática e segura.
+O frontend desta aplicação tem como objetivo proporcionar uma interface moderna, intuitiva e responsiva para os usuários do sistema de gestão de coworking. A aplicação permite que usuários consultem espaços disponíveis, realizem reservas e gerenciem suas atividades de forma prática e segura.
 
 ---
 
@@ -35,7 +35,7 @@ O projeto será dividido em 4 interfaces web:
 - **Background:**  
   Imagem institucional de uma sala de reunião moderna e iluminada, proporcionando um visual harmônico e alinhado com o tema.
 
-- **Formulário de Login:**
+- **Formulário de Cadastro:**
   - Logotipo da aplicação em destaque.
   - Mensagem de boas-vindas incentivando o preenchimento do formulário.
   - Campo de entrada para Nome Completo.
@@ -118,7 +118,7 @@ O projeto será dividido em 4 interfaces web:
 
 ![ManageReservation](img/Manage-Reservation-Page.png)
 
-- **Pop-ups de Reservas:**
+- **Pop-ups de reservas:**
   - Cartão de confirmação de cancelamento.
   - Modal para reagendamento.
     
@@ -224,7 +224,7 @@ O design visual segue uma linha clean e corporativa, com o objetivo de transmiti
   
 ![userflowlogin](img/Userflow-Login.png)
 
-- **Flluxo principal:**
+- **Fluxo principal:**
   
 ![userflowflow](img/Userflow-Flow.png)
 
