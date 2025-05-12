@@ -173,7 +173,7 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
 - **2. Criação de credenciais existentes:**
 
-![login-exist](img/testecomloginexistente)
+![login-exist](img/testecomloginexistente.png)
 
 - **3. Não preechimento do campo no login:**
 
