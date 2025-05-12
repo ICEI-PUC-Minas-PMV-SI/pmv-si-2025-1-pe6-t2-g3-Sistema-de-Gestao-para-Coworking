@@ -155,9 +155,38 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
 ---
 
-## 4. Cenários de Testes de Validação de Dados
+## 4. Cenários de Testes de Erros Esperados
 
-Preencher aqui Guilherme
+| Cenário                                | Resultado Esperado         |
+|----------------------------------------|-----------------------------|
+| Login com credenciais erradas          | 500 Email ou senha incorretos |
+| Criação de credenciais existentes      | 500 Email ou senha incorretos |
+| Não preechimento do campo no login     | Email e senha obrigatorio     |
+| Não preechimento do campo no cadastro  | Email e senha obrigatorio     |
+| Prenchimento errado da area de email   | Erro de credencial            |
+
+#### Evidências
+
+- **1. Login com credenciais erradas:**
+
+![login-cred](img/testecomloginerrado.png)
+
+- **2. Criação de credenciais existentes:**
+
+![login-exist](img/testecomloginexistente)
+
+- **3. Não preechimento do campo no login:**
+
+![login-sem-senha](img/semloginesemsenha.png)
+
+- **4. Não preechimento do campo no cadastro:**
+
+![cadastro-sem-senha](img/sempreenchercadastro.png)
+
+- **5. Prenchimento errado da area de email:**
+
+![email-errado-login](img/emailerradologin.png)
+![email-errado-cadastro](img/emailerradocadastro.png)
 
 ---
 
