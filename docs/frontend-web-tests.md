@@ -30,7 +30,7 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 | Tela                      | Login                                          |
 | Funcionalidade Testada    | Registro e autenticação de usuário com dados válidos |
 | Requisito Relacionado     | [RF01] Permitir que o usuário se registre e faça login no site |
-| Resultado Esperado        | Pop up de sucesso e redirecionamento para a tela principal |
+| Resultado Esperado        | pop-up de sucesso e redirecionamento para a tela principal |
 | Resultado Obtido          | Sucesso                                        |
 | Observações               | Token JWT gerado e armazenado no navegador     |
 
@@ -44,9 +44,9 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
   ![login-form](img/Login_front_ok.png)
 
-- **3. Pop up Login bem sucedido:**
+- **3. pop-up Login bem sucedido:**
 
-  ![login-popup](img/Login_front_pop_up.png)
+  ![login-pop-up](img/Login_front_pop_up.png)
 
 - **4. Evidência Swagger Backend:**
 
@@ -65,7 +65,7 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 | Tela                      | Agendar reserva e gerenciamento de reservas    |
 | Funcionalidade Testada    | Realizar o agendamento e gerenciar as reservas |
 | Requisito Relacionado     | [RF02] Permitir que o usuário consiga agendar e gerenciar suas reservas |
-| Resultado Esperado        | Pop up de sucesso e redirecionamento           |
+| Resultado Esperado        | pop-up de sucesso e redirecionamento           |
 | Resultado Obtido          | Sucesso                                        |
 
 #### Evidências
@@ -78,9 +78,9 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
   ![reservation-management](img/Reservation_manage.png)
 
-- **3. Pop up reserva bem sucedida:**
+- **3. pop-up reserva bem sucedida:**
 
-  ![reservation-popup](img/Reservation_pop_up.png)
+  ![reservation-pop-up](img/Reservation_pop_up.png)
 
 - **4. Evidência Swagger Backend:**
 
@@ -99,7 +99,7 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 | Tela                      | Gerenciamento de reservas                      |
 | Funcionalidade Testada    | Realizar o reagendamento da reserva           |
 | Requisito Relacionado     | [RF03] Permitir que o usuário edite ou cancele suas reservas antes do horário agendado |
-| Resultado Esperado        | Pop up de sucesso e redirecionamento para a tela de gerenciamento reservas |
+| Resultado Esperado        | pop-up de sucesso e redirecionamento para a tela de gerenciamento reservas |
 | Resultado Obtido          | Sucesso                                        |
 
 #### Evidências
@@ -108,13 +108,13 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
   ![manage-form](img/Manage_front_form.png)
 
-- **2. Reangedado:**
+- **2. Reagendado:**
 
   ![manage-ok](img/Manage_front_ok.png)
 
-- **3. Pop up reagendamento bem sucedido:**
+- **3. pop-up reagendamento bem sucedido:**
 
-  ![manage-popup](img/Manage_front_pop_up.png)
+  ![manage-pop-up](img/Manage_front_pop_up.png)
 
 - **4. Evidência Swagger Backend:**
 
@@ -132,7 +132,7 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 | Tela                      | Gerenciamento de reservas                      |
 | Funcionalidade Testada    | Realizar o cancelamento da reserva           |
 | Requisito Relacionado     | [RF03] Permitir que o usuário edite ou cancele suas reservas antes do horário agendado |
-| Resultado Esperado        | Pop up de sucesso e redirecionamento para a tela de reserva vazia |
+| Resultado Esperado        | pop-up de sucesso e redirecionamento para a tela de reserva vazia |
 | Resultado Obtido          | Sucesso                                        |
 
 #### Evidências
@@ -141,9 +141,9 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
   ![cancel-form](img/Cancel_front_form.png)
 
-- **2. Pop up cancelamento bem sucedido:**
+- **2. pop-up cancelamento bem sucedido:**
 
-  ![cancel-popup](img/Cancel_front_pop_up.png)
+  ![cancel-pop-up](img/Cancel_front_pop_up.png)
 
 - **3. Evidência Swagger Backend:**
 
@@ -157,13 +157,13 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
 ## 4. Cenários de Testes de Erros Esperados
 
-| Cenário                                | Resultado Esperado         |
-|----------------------------------------|-----------------------------|
-| Login com credenciais erradas          | 500 Email ou senha incorretos |
-| Criação de credenciais existentes      | 500 Email ou senha incorretos |
-| Não preechimento do campo no login     | Email e senha obrigatorio     |
-| Não preechimento do campo no cadastro  | Email e senha obrigatorio     |
-| Prenchimento errado da area de email   | Erro de credencial            |
+| Cenário                                | Resultado Esperado                  |
+|----------------------------------------|-------------------------------------|
+| Login com credenciais erradas          | Erro 500: Email ou senha incorretos |
+| Criação de credenciais existentes      | Erro 500: Email ou senha incorretos |
+| Não preenchimentodo campo no login     | Email e senha obrigatórios          |
+| Não preenchimentodo campo no cadastro  | Email e senha obrigatórios          |
+| Prenchimento errado da area de email   | Erro de credencial                  |
 
 #### Evidências
 
@@ -175,11 +175,11 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
 ![login-exist](img/testecomloginexistente.png)
 
-- **3. Não preechimento do campo no login:**
+- **3. Não preenchimentodo campo no login:**
 
 ![login-sem-senha](img/semloginesemsenha.png)
 
-- **4. Não preechimento do campo no cadastro:**
+- **4. Não preenchimentodo campo no cadastro:**
 
 ![cadastro-sem-senha](img/sempreenchercadastro.png)
 
@@ -192,6 +192,6 @@ Os testes do frontend foram realizados manualmente, simulando o comportamento re
 
 ## 5. Considerações Finais
 
-Todos os testes manuais realizados foram satisfatórios para as funcionalidades desenvolvidas até o momento.  
-A integração entre frontend, backend e banco de dados foram evidenciados.  
+Todos os testes manuais realizados obtiveram resultados satisfatórios.  
+A integração entre frontend, backend e banco de dados foi evidenciada.  
 Os fluxos principais (login, reserva, gerenciamento) apresentaram comportamento estável e coerente com os requisitos do projeto.
