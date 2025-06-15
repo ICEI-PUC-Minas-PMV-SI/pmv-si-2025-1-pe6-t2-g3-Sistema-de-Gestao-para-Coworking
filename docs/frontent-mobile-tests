@@ -29,7 +29,7 @@ Os testes do app foram realizados manualmente, simulando o comportamento real do
 |----------------------------|-----------------------------------------------|
 | Tela                      | Login                                          |
 | Funcionalidade Testada    | Registro e autenticação de usuário com dados válidos |
-| Requisito Relacionado     | [RF01] Permitir que o usuário se registre e faça login no site |
+| Requisito Relacionado     | [RF01] Permitir que o usuário se registre e faça login no App |
 | Resultado Esperado        | pop-up de sucesso e redirecionamento para a tela principal |
 | Resultado Obtido          | Sucesso                                        |
 | Observações               | Token JWT gerado e armazenado no navegador     |
@@ -38,23 +38,23 @@ Os testes do app foram realizados manualmente, simulando o comportamento real do
 
 - **1. Cadastro de usuário:**
 
-  ![register-form](img/Register_front_ok.png)
+  ![register-form](img/CadastroPreenchido.png)
   
 - **2. Login do usuário:**
 
-  ![login-form](img/Login_front_ok.png)
+  ![login-form](img/LoginCorreto.png)
 
 - **3. pop-up Login bem sucedido:**
 
-  ![login-pop-up](img/Login_front_pop_up.png)
+  ![login-pop-up](img/CadastroCorreto.png)
 
 - **4. Evidência Swagger Backend:**
 
-  ![login-swagger](img/Login_swagger_ok.png)
+  ![login-swagger](img/SawaggerCorreto.png)
   
 - **5. Evidência Banco de Dados:**
 
-  ![login-database](img/Login_bd_ok.png)
+  ![login-database](img/BDCadastro.png)
 
 ---
 
@@ -72,23 +72,24 @@ Os testes do app foram realizados manualmente, simulando o comportamento real do
 
 - **1. Reservar:**
 
-  ![reservation-form](img/Reservation_front_form.png)
+  ![reservation-form](img/ReservaDeSala.png)
   
 - **2. Gerenciar reserva:**
 
-  ![reservation-management](img/Reservation_manage.png)
+  ![reservation-management](img/GerenciarReservas.png)
+  ![reservation-management](img/DetalheReserva.png)
 
 - **3. pop-up reserva bem sucedida:**
 
-  ![reservation-pop-up](img/Reservation_pop_up.png)
+  ![reservation-pop-up](img/ReservaConfirmada.png)
 
 - **4. Evidência Swagger Backend:**
 
-  ![reservation-swagger](img/Reservation_swagger_ok.png)
+  ![reservation-swagger](img/SwaggerSalaMarcada.png)
   
 - **5. Evidência Banco de Dados:**
 
-  ![reservation-database](img/Reservation_bd_ok.png)
+  ![reservation-database](img/BDSalaConfirmada.png)
 
 ---
 
@@ -106,23 +107,23 @@ Os testes do app foram realizados manualmente, simulando o comportamento real do
 
 - **1. Reagendar:**
 
-  ![manage-form](img/Manage_front_form.png)
+  ![manage-form](img/DetalheReserva.png)
 
 - **2. Reagendado:**
 
-  ![manage-ok](img/Manage_front_ok.png)
+  ![manage-ok](img/ReservaAgendada.png)
 
 - **3. pop-up reagendamento bem sucedido:**
 
-  ![manage-pop-up](img/Manage_front_pop_up.png)
+  ![manage-pop-up](img/PopUpReagendar.png)
 
 - **4. Evidência Swagger Backend:**
 
-  ![manage-swagger](img/Manage_swagger_ok.png)
+  ![manage-swagger](img/SwaggerReagendar.png)
   
 - **5. Evidência Banco de Dados:**
 
-  ![manage-database](img/Manage_bd_ok.png)
+  ![manage-database](img/BDReagendar.png)
 
 ---
 ### 3.4. Cancelamento de reserva
@@ -139,7 +140,7 @@ Os testes do app foram realizados manualmente, simulando o comportamento real do
 
 - **1. Cancelar:**
 
-  ![cancel-form](img/Cancel_front_form.png)
+  ![cancel-form](img/DetalheReserva.png)
 
 - **2. pop-up cancelamento bem sucedido:**
 
@@ -147,11 +148,11 @@ Os testes do app foram realizados manualmente, simulando o comportamento real do
 
 - **3. Evidência Swagger Backend:**
 
-  ![cancel-swagger](img/Cancel_swagger_ok.png)
+  ![cancel-swagger](img/SwaggerCancelamento.png)
   
 - **4. Evidência Banco de Dados:**
 
-  ![cancel-database](img/Cancel_bd_ok.png)
+  ![cancel-database](img/BDCancelamento.png)
 
 ---
 
@@ -159,34 +160,51 @@ Os testes do app foram realizados manualmente, simulando o comportamento real do
 
 | Cenário                                | Resultado Esperado                  |
 |----------------------------------------|-------------------------------------|
-| Login com credenciais erradas          | Erro 500: Email ou senha incorretos |
-| Criação de credenciais existentes      | Erro 500: Email ou senha incorretos |
+| Login com email incorreto              | Inserir email valido                |
+| Login com Senha incorreta              | Senha Invalida                      |
 | Não preenchimentodo campo no login     | Email e senha obrigatórios          |
 | Não preenchimentodo campo no cadastro  | Email e senha obrigatórios          |
 | Prenchimento errado da area de email   | Erro de credencial                  |
+| Senha não coincidentes no cadatro      | Senhas não coincidem                |
+| Cadastro errado do email               | Insira um email Valido              |
+| Cadastro errado da Senha               | Senha deve ter 6 caracteres         |
+| Criação de credenciais existentes      | Erro 500: Email ou senha incorretos |
 
 #### Evidências
 
-- **1. Login com credenciais erradas:**
+- **1. Login com email incorreto:**
 
-![login-cred](img/testecomloginerrado.png)
+![login-EmailIncorreto](img/EmailInvalidoLogin.png)
 
-- **2. Criação de credenciais existentes:**
+//- **2. Login com Senha incorreta:**
 
-![login-exist](img/testecomloginexistente.png)
+![login-SenhaIncorreta](img/LoginSenhaIncorreta.png)
 
 - **3. Não preenchimentodo campo no login:**
 
-![login-sem-senha](img/semloginesemsenha.png)
+![login-Vazio](img/CampoVazio.png)
 
 - **4. Não preenchimentodo campo no cadastro:**
 
-![cadastro-sem-senha](img/sempreenchercadastro.png)
+![cadastro-Vazio](img/CampoVazioCriar.png)
 
 - **5. Prenchimento errado da area de email:**
 
-![email-errado-login](img/emailerradologin.png)
-![email-errado-cadastro](img/emailerradocadastro.png)
+![email-errado-login](img/EmailErradoLogin.png)
+
+- **6. Senha não coincidentes no cadatro:**
+
+![cadastro-SenhaNaoCoincidem](img/SenhaNaoCoincidem.png)
+
+- **7. Cadastro errado do email e senha:**
+
+![cadastro-ErroSenhaEEmail](img/EmailESenhaInvalidos.png)
+
+- **8. Criação de credenciais existentes:**
+
+![cadastro-ErroSenhaEEmail](img/CriarUsuarioExistente.png)
+
+
 
 ---
 
