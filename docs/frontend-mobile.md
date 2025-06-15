@@ -1,19 +1,44 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+O frontend desta aplicação tem como objetivo proporcionar uma interface moderna, intuitiva e responsiva para os usuários do sistema de gestão de coworking. A aplicação permite que usuários consultem espaços disponíveis, realizem reservas e gerenciem suas atividades de forma prática e segura.
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
+O projeto será dividido em 3 interfaces web:
+- **Login e Register:** interface de login dos usuários, com possibilidade de cadastro no sistema.
+- **Reserva:** permitir que os usuários autenticados possam reservar os espaços, podendo escolher as salas e os dias disponíveis para agendamento.
+- **Gerenciamento de Reservas:** permitir que os usuários autenticados possam visualizar, reagendar ou cancelar suas reservas existentes.
+  
 ### Wireframes
 
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+O design visual segue uma linha clean e corporativa, com o objetivo de transmitir confiabilidade e modernidade.
 
-### **User Flow**
+- **Paleta de Cores:**
+  - Laranja claro (#F58220) - Destaques e botões.
+  - Bege (#ECD3A2) - Background geral.
+  - Azul escuro (#18344D) - Background de elementos.
+  - Branco (#FFFFFF) - Plano de fundo.
+  - Tons de cinza para textos secundários.
+
+- **Tipografia:**
+  - Principal: "Poppins" (Google Fonts).
+  - Títulos: "Poppins Bold", textos normais: "Poppins Regular".
+
+- **Ícones:**
+  - Utilização de ícones minimalistas relacionados a coworking, comunicação e serviços.
+
+- **Estilo de Layout:**
+  - Estrutura em colunas verticais, com espaçamento generoso entre os elementos.
+  - Botões grandes para facilitar a interação em dispositivos móveis.
+  - Ícone de perfil com menu suspenso para facilitar a navegação entre funcionalidades.
+
+---
+
+## Fluxo de Dados
 As imagens do figma e as registradas abaixo neste documento, ilustram o fluxo completo de navegação do aplicativo Belo Space, contemplando as principais interações do usuário desde o cadastro até a gestão de reservas.
 
 A primeira imagem representa o fluxo de acesso, com validações de cadastro e login, além do processo de recuperação de senha. Já a segunda imagem cobre a experiência após o login, incluindo agendamento de salas, visualização e cancelamento de reservas, acesso ao perfil e opção de logout.
@@ -31,17 +56,38 @@ Esses fluxos garantem uma navegação clara e intuitiva para o usuário, reforç
 - Parte 2:
 ![image](https://github.com/user-attachments/assets/5b63e36b-2b01-4ddb-8592-2526a799674b)
 
-## Fluxo de Dados
-
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+---
 
 ## Tecnologias Utilizadas
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
-
+- **Linguagem Principal:** Dart (3.8.1)
+- **Framework:** Flutter (3.32.4)
+- **Design:** Figma
+  
 ## Considerações de Segurança
+A segurança da aplicação front-end visa proteger os dados do usuário, garantir a integridade da autenticação e evitar vulnerabilidades comuns em aplicações web.
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+---
+
+### Autenticação com JWT
+A autenticação é realizada por meio de tokens JWT gerados pelo backend no login. O token é armazenado em memória (evitando localStorage) e enviado nas requisições via header:
+`Authorization: Bearer <token>`
+
+O token possui tempo de expiração e é utilizado para acesso a rotas protegidas da aplicação.
+
+### Controle de Acesso
+A interface controla a visibilidade de elementos com base no perfil do usuário autenticado (admin ou customer). Rotas sensíveis redirecionam para login caso não haja autenticação válida.
+
+### Validação de Dados
+Formulários realizam validação local dos campos obrigatórios, formatos e regras de negócio, reduzindo falhas de envio e protegendo a aplicação contra dados inconsistentes.
+
+### Prevenção de Vulnerabilidades
+A aplicação evita inserção direta de conteúdo HTML no DOM e não utiliza `dangerouslySetInnerHTML`, prevenindo XSS. A autenticação via token mitiga riscos de CSRF.
+
+### Comunicação Segura
+Todas as requisições são feitas sobre HTTPS, assegurando criptografia dos dados trocados entre o front-end e a API.
+
+---
 
 ## Implantação
 
@@ -53,15 +99,9 @@ Esses fluxos garantem uma navegação clara e intuitiva para o usuário, reforç
 4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
 5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
 
-## Testes
+---
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
-
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+[Frontend Mobile Testes](/docs/frontend-mobile-tests.md) <br> 
 
 # Referências
 
