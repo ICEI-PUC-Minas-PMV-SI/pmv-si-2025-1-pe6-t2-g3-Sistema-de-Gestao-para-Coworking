@@ -13,6 +13,24 @@
 
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
 
+### **User Flow**
+As imagens do figma e as registradas abaixo neste documento, ilustram o fluxo completo de navegação do aplicativo Belo Space, contemplando as principais interações do usuário desde o cadastro até a gestão de reservas.
+
+A primeira imagem representa o fluxo de acesso, com validações de cadastro e login, além do processo de recuperação de senha. Já a segunda imagem cobre a experiência após o login, incluindo agendamento de salas, visualização e cancelamento de reservas, acesso ao perfil e opção de logout.
+
+Esses fluxos garantem uma navegação clara e intuitiva para o usuário, reforçando a usabilidade e eficiência da aplicação.
+
+[Link de acesso ao Figma do User Flow](https://www.figma.com/board/C8eRwkC8NGeR635mpIEnlH/User-Flow-Diagram-for-FigJam--Community-?node-id=0-1&p=f&t=NrvBACWEv0aZdlvV-0) <br>
+
+- Macro imagem: 
+![image](https://github.com/user-attachments/assets/3b45bda7-c5eb-4fce-bf7c-678a5450809b)
+
+- Parte 1:
+![image](https://github.com/user-attachments/assets/c0cb7971-4368-4de9-9bf4-35e4e90f6379)
+
+- Parte 2:
+![image](https://github.com/user-attachments/assets/5b63e36b-2b01-4ddb-8592-2526a799674b)
+
 ## Fluxo de Dados
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
