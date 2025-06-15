@@ -176,7 +176,7 @@ Os testes do app foram realizados manualmente, simulando o comportamento real do
 
 ![login-EmailIncorreto](img/EmailInvalidoLogin.png)
 
-//- **2. Login com Senha incorreta:**
+- **2. Login com Senha incorreta:**
 
 ![login-SenhaIncorreta](img/LoginSenhaIncorreta.png)
 
