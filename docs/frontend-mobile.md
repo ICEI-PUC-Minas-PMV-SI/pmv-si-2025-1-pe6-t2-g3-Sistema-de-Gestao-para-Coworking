@@ -1,17 +1,110 @@
 # Front-end Móvel
 
-O frontend desta aplicação tem como objetivo proporcionar uma interface moderna, intuitiva e responsiva para os usuários do sistema de gestão de coworking. A aplicação permite que usuários consultem espaços disponíveis, realizem reservas e gerenciem suas atividades de forma prática e segura.
+O front end para o app mobile desta aplicação tem como objetivo proporcionar uma interface moderna, intuitiva e responsiva para os usuários do sistema de gestão de coworking. A aplicação permite que usuários consultem espaços disponíveis, realizem reservas e gerenciem suas atividades de forma prática e segura.
+
+---
 
 ## Projeto da Interface
 
-O projeto será dividido em 3 interfaces web:
+O projeto será dividido em 4 interfaces web:
 - **Login e Register:** interface de login dos usuários, com possibilidade de cadastro no sistema.
-- **Reserva:** permitir que os usuários autenticados possam reservar os espaços, podendo escolher as salas e os dias disponíveis para agendamento.
+- **Workspaces:** permitir que os usuários autenticados possam reservar os espaços, podendo escolher as salas e os dias disponíveis para agendamento.
 - **Gerenciamento de Reservas:** permitir que os usuários autenticados possam visualizar, reagendar ou cancelar suas reservas existentes.
+- **Sobre e Perfil**: interfaces auxiliares que contém as informações sobre as versões e os direitos do aplicativo, e os dados do usuário autenticado.
+
+## Estrutura da Página de Login
+
+- **Formulário de Login:**
+
+![MobileLogin](img/mobile/Mobile-Login.png)
+
+- **Formulário de Cadastro:**
   
+![MobileRegister](img/mobile/Mobile-Register.png)
+
+## Estrutura da Página de Workspaces
+
+- **Workspaces:**
+
+![MobileWorkspaces](img/mobile/Mobile-Workspaces.png)
+
+- **Nova Reserva:**
+
+![MobileNewReservation](img/mobile/Mobile-NewReservation.png)
+
+## Estrutura da Página de Gerenciamento de Reservas
+
+- **Reservas do Usuário:**
+  
+![MobileReservations](img/mobile/Mobile-Reservations.png)
+
+- **Detalhes da Reserva:**
+  
+![MobileReservationDetails](img/mobile/Mobile-ReservationDetails.png)
+
+- **Reagendar Reserva:**
+  
+![MobileReschedule](img/mobile/Mobile-Reschedule.png)
+
+- **Cancelar Reserva:**
+  
+![MobileReservationCancel](img/mobile/Mobile-ReservationCancel.png)
+
+## Estrutura da Página Sobre
+
+- **About:**
+
+![MobileAbout](img/mobile/Mobile-About.png)
+
+- **Profile:**
+
+![MobileProfile](img/mobile/Mobile-Profile.png)
+
+---
+
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+**Formulário de Login Wireframe:**
+
+![MobileWireframeLogin](img/mobile/Mobile-Wireframe-Login.png)
+
+**Formulário de Cadastro Wireframe:**
+
+![MobileWireframeRegister](img/mobile/Mobile-Wireframe-Register.png)
+
+**Workspaces Wireframe:**
+
+![MobileWireframeWorkspaces](img/mobile/Mobile-Wireframe-Workspaces.png)
+
+**Nova Reserva Wireframe:**
+
+![MobileWireframeNewReservation](img/mobile/Mobile-Wireframe-NewReservation.png)
+
+**Reservas do Usuário Wireframe:**
+
+![MobileWireframeReservations](img/mobile/Mobile-Wireframe-Reservations.png)
+
+**Detalhes da Reserva Wireframe:**
+
+![MobileWireframeReservationDetails](img/mobile/Mobile-Wireframe-ReservationDetails.png)
+
+**Reagendar Reserva Wireframe:**
+
+![MobileWireframeReschedule](img/mobile/Mobile-Wireframe-Reschedule.png)
+
+**Cancelar Reserva Wireframe:**
+
+![MobileWireframeReservationCancel](img/mobile/Mobile-Wireframe-ReservationCancel.png)
+
+**About Wireframe:**
+
+![MobileWireframeAbout](img/mobile/Mobile-Wireframe-About.png)
+
+**Profile Wireframe:**
+
+![MobileWireframeProfile](img/mobile/Mobile-Wireframe-Profile.png)
+
+---
 
 ### Design Visual
 
@@ -101,7 +194,9 @@ Todas as requisições são feitas sobre HTTPS, assegurando criptografia dos dad
 
 ---
 
-[Frontend Mobile Testes](/docs/frontend-mobile-tests.md) <br> 
+## Testes
+
+[Frontend Mobile Testes](frontent-mobile-tests) <br> 
 
 # Referências
 
