@@ -190,11 +190,11 @@ Os testes do app foram realizados manualmente, simulando o comportamento real do
 
 - **5. Prenchimento errado da area de email:**
 
-![email-errado-login](img/EmailErradoLogin.png)
+![email-errado-login](img/EmailInvalidoLogin.png)
 
 - **6. Senha não coincidentes no cadatro:**
 
-![cadastro-SenhaNaoCoincidem](img/SenhaNaoCoincidem.png)
+![cadastro-SenhaNaoCoincidem](img/SenhasNaoCoincidem.png)
 
 - **7. Cadastro errado do email e senha:**
 
