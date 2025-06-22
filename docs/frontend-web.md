@@ -216,6 +216,12 @@ O design visual segue uma linha clean e corporativa, com o objetivo de transmiti
 
 ## Fluxo de Dados
 
+As imagens registradas abaixo neste documento, ilustram o fluxo completo de navegação do front end web Belo Space, contemplando as principais interações do usuário desde o cadastro até a gestão de reservas.
+
+A primeira imagem representa o fluxo de acesso, com validações de cadastro e login, além do processo de recuperação de senha. Já a segunda imagem cobre a experiência após o login, incluindo agendamento de salas, visualização e cancelamento de reservas, acesso ao perfil e opção de logout.
+
+Esses fluxos garantem uma navegação clara e intuitiva para o usuário, reforçando a usabilidade e eficiência da aplicação.
+
 - **Legenda dos fluxos:**
   
 ![userflowlegenda](img/Userflow-Legenda.png)
@@ -271,7 +277,6 @@ Todas as requisições são feitas sobre HTTPS, assegurando criptografia dos dad
 [Frontend Testes](/docs/frontend-web-tests.md) <br> 
 
 # Referências
-
 
 - Microfundamento: APIs e Web Services
 - Microfundamento: Arquitetura de Software Distribuído
