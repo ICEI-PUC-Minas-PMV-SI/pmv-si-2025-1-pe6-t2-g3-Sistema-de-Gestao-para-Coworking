@@ -549,7 +549,7 @@ A segurança foi integrada desde o início do desenvolvimento, garantindo prote�
 
 # Referências
 
--Microfundamento: APIs e Web Services
--Microfundamento: Arquitetura de Software Distribuído
--SpringBoot Docs
--Stackoverflow
+- Microfundamento: APIs e Web Services
+- Microfundamento: Arquitetura de Software Distribuído
+- SpringBoot Docs
+- Stackoverflow
