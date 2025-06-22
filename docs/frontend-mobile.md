@@ -191,5 +191,5 @@ Todas as requisições são feitas sobre HTTPS, assegurando criptografia dos dad
 - Microfundamento: APIs e Web Services
 - Microfundamento: Arquitetura de Software Distribuído
 - Microfundamento: Desenvolvimento de Aplicações Móveis
-- NextJS Docs
-- NodeJS Docs
+- Flutter Docs
+- Dart Docs
