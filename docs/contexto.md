@@ -87,9 +87,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | Frontend | Lucas Borges Silva e Gabriel Vilhena Magri |
 | Mobile | Gabriel Vilhena Magri e Ian Faria Chamone |
 | Testing | Guilherme Pereira Carneiro |
-| Documentação | Raphaela Tamietto Rios e Ian Faria Chamone |
-| Interfaces | Iyan Lucas Duarte Marques e Guilherme Pereira Carneiro |
-| Infraestrutura | Iyan Lucas Duarte Marques |
+| Documentação | Raphaela Tamietto Rios |
+| Interfaces | Iyan Lucas Duarte Marques |
 | Líder | Arthur Andrade de Oliveira |
 
 ## Restrições
@@ -134,26 +133,17 @@ O projeto está restrito pelos seguintes itens:
 - Definição de regras para uso das salas.
 - Monitoramento da ocupação das salas.
 
-## 4. Controle de Acesso
-- Permissão de acesso conforme perfil de usuário.
-- Gerenciamento de diferentes níveis de acesso para administradores e usuários comuns.
-
-## 5. Interface Multiplataforma
+## 4. Interface Multiplataforma
 - Acesso ao sistema por meio de aplicação web e mobile.
 - Interface responsiva para diferentes dispositivos.
 
-## 6. Armazenamento de Dados
+## 5. Armazenamento de Dados
 - Registro de informações de reservas, usuários e espaços.
 - Manutenção da integridade dos dados na base de dados.
 
-## 7. Relatórios e Análises
-- Geração de relatórios sobre a ocupação das salas.
-- Análise de dados para otimização do uso dos espaços.
-
-## 8. Auditoria e Logs
+## 6. Auditoria e Logs
 - Registro de eventos e atividades realizadas no sistema.
 - Armazenamento de logs para rastreamento de ações.
-- Consulta e exportação de logs para fins de auditoria.
 
 ---
 
@@ -163,17 +153,17 @@ O projeto está restrito pelos seguintes itens:
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Backend:
+   - Linguagem: Java
+   - Framework: Spring Boot
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Frontend: 
+   - Linguagem: JavaScript
+   - Framework: React
 
-## Hospedagem
+Mobile: 
+   - Linguagem: Dart
+   - Framework: Flutter
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+Banco de Dados: 
+   - PostgreeSQL
