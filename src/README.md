@@ -1,11 +1,60 @@
 # Instruções de utilização
 
+## Instalação do Backend
+
+**Pré-requisitos:** 
+
+- [Java SDK](https://nodejs.org/en/)
+- [Docker](https://www.docker.com/products/docker-desktop/)
+- [Dbeaver](https://dbeaver.io/download/)
+
+1.  Clone este repositório para sua máquina local:
+```
+git clone https://github.com/lucborges/conectabh-service.git
+```
+
+2.  Pelo terminal, inicie o docker para subir o banco de dados:
+
+```
+docker compose up
+```
+
+3.  Em seguida rode a aplicação através do arquivo:
+
+```
+conectabh-service\src\main\java\com\pucminas\conectabh_service\ConectabhServiceApplication.java
+```
+
+4.  Em seguida acesse a URL pelo browser para o Swagger:
+```
+localhost:8080/swagger-ui/index.html
+```
+
 ## Instalação do Site
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+**Pré-requisitos:** 
 
-## Histórico de versões
+- [Node.js](https://nodejs.org/en/)
+- [Docker](https://www.docker.com/products/docker-desktop/)
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado
-- Adicionado ...
+1.  Clone este repositório para sua máquina local:
+```
+git clone https://github.com/lucborges/belospace-web.git
+```
+
+2.  Pelo terminal, instale o ambiente npm:
+
+```
+npm install
+```
+
+3.  Em seguida rode a aplicação:
+
+```
+npm run dev
+```
+
+4.  Em seguida acesse a URL pelo browser para o front:
+```
+http://localhost:3000
+```
