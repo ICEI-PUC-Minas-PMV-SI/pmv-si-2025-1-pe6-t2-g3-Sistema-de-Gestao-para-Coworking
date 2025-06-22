@@ -266,20 +266,15 @@ A aplicação evita inserção direta de conteúdo HTML no DOM e não utiliza `d
 
 Todas as requisições são feitas sobre HTTPS, assegurando criptografia dos dados trocados entre o front-end e a API.
   
-## Implantação
-
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
-
 ## Testes
 
 [Frontend Testes](/docs/frontend-web-tests.md) <br> 
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+
+- Microfundamento: APIs e Web Services
+- Microfundamento: Arquitetura de Software Distribuído
+- Microfundamento: Desenvolvimento de Aplicações Móveis
+- NextJS Docs
+- NodeJS Docs
