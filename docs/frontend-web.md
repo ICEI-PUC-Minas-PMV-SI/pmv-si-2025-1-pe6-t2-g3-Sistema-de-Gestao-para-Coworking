@@ -277,4 +277,4 @@ Todas as requisições são feitas sobre HTTPS, assegurando criptografia dos dad
 - Microfundamento: Arquitetura de Software Distribuído
 - Microfundamento: Desenvolvimento de Aplicações Móveis
 - NextJS Docs
-- NodeJS Docs
+- React Docs
