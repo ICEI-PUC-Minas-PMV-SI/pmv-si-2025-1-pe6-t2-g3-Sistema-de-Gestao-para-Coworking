@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: "conectabh-service"
+    description: "Um projeto de Salas Coworking para reservas em Belo Horizonte. Desenvolvido por alunos da PUC Minas"
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5432/conectabh
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+
+  # Configuração de segurança corretamente posicionada:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080
+          jwk-set-uri: http://localhost:8080/.well-known/jwks.json
+    jwt:
+      secret-key: "aXRzYXNlY3JldGtleXlvdXNob3VsZG5vdGNvbW1pdHRvZ2l0aHViYnV0aGVyZXlvdWdvd2hhdGFyZWxseWZ1Y2tpbmdkb2luZ2hlcmU="
+      expiration: 86400000 # 24 horas em milissegundos
+
+# springdoc:
+#   swagger-ui:
+#     path: /docs
