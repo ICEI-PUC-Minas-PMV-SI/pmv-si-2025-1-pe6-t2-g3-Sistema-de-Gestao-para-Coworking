@@ -33,11 +33,8 @@ O sistema permitirá que usuários realizem agendamentos de salas, gerenciem sua
 | ETAPA 3         |[Planejar, desenvolver e gerenciar uma aplicação Web](docs/frontend-web.md) |
 | ETAPA 4        |[Planejar, desenvolver e gerenciar uma aplicação Móvel](docs/frontend-mobile.md) <br>  |
 | ETAPA 5         | [Apresentação](presentation/README.md) |
-## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
-
-# Código
+## Instruções de utilização e Código Fonte
 
 <li><a href="src/README.md"> Código Fonte</a></li>
 
