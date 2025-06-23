@@ -58,3 +58,26 @@ npm run dev
 ```
 http://localhost:3000
 ```
+
+## Instalação do App
+
+**Pré-requisitos:** 
+
+- [Dart SDK](https://dart.dev/get-dart) (>= 3.7.*)
+- [Flutter](https://docs.flutter.dev/get-started/install/windows)
+
+1.  Clone este repositório para sua máquina local:
+```
+git clone https://github.com/GabrielVilhenaMagri/belospace-mobile.git
+```
+
+2.  Inicie algum emulador ou utilize um telefone para rodar o app.
+
+3.  Através do terminal, rode a aplicação com o comando:
+
+```
+flutter run
+```
+
+4.  Em seguida o app se abrirá no emulador ativo.
+
